@@ -1,3 +1,3 @@
-# RiskAI Full v7.2
+# RISKⁱ Full v7.7
 
-Usable full release. Restores profiles, calendar, history, car detail model, secondary outcomes, Risk Copilot, sources, methodology, bilingual UI and mobile navigation while retaining the v7.1 SQLite/JSON data registry.
+Complete publishable release implementing the calibrated-signal design system. Includes 23 mobility modes, car barriers, four outcomes, profiles, calendar, heatmap history, export, insights, data, evidence, contextual sources, methodology, model limits, legal notice, bilingual UI, responsive navigation, SQLite and the current PDF only.

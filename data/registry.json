@@ -1,0 +1,321 @@
+{
+  "release": "7.7.0",
+  "modes": [
+    {
+      "id": "car",
+      "de": "Auto",
+      "en": "Car",
+      "unit": "km",
+      "rate": 2.52e-09,
+      "tier": "D"
+    },
+    {
+      "id": "motorcycle",
+      "de": "Motorrad",
+      "en": "Motorcycle",
+      "unit": "km",
+      "rate": 3.641e-08,
+      "tier": "D"
+    },
+    {
+      "id": "bicycle",
+      "de": "Fahrrad",
+      "en": "Bicycle",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "ebike",
+      "de": "E-Bike",
+      "en": "E-bike",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "walk",
+      "de": "Zu Fuß",
+      "en": "Walking",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "bus",
+      "de": "Bus",
+      "en": "Bus",
+      "unit": "km",
+      "rate": 2.4e-10,
+      "tier": "D"
+    },
+    {
+      "id": "tram",
+      "de": "Straßenbahn",
+      "en": "Tram",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "subway",
+      "de": "U-Bahn",
+      "en": "Subway",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "train",
+      "de": "Zug",
+      "en": "Train",
+      "unit": "km",
+      "rate": 9e-11,
+      "tier": "D"
+    },
+    {
+      "id": "plane",
+      "de": "Flugzeug",
+      "en": "Aircraft",
+      "unit": "km",
+      "rate": 8.000000000000001e-11,
+      "tier": "D"
+    },
+    {
+      "id": "ferry",
+      "de": "Fähre",
+      "en": "Ferry",
+      "unit": "Fahrt",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "boat",
+      "de": "Boot",
+      "en": "Boat",
+      "unit": "Stunden",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "taxi",
+      "de": "Taxi",
+      "en": "Taxi",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "rideshare",
+      "de": "Mitfahrdienst",
+      "en": "Ride share",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "truck",
+      "de": "Lkw",
+      "en": "Truck",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "van",
+      "de": "Transporter",
+      "en": "Van",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "scooter",
+      "de": "E-Scooter",
+      "en": "E-scooter",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "moped",
+      "de": "Moped",
+      "en": "Moped",
+      "unit": "km",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "skateboard",
+      "de": "Skateboard",
+      "en": "Skateboard",
+      "unit": "Stunden",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "horse",
+      "de": "Reiten",
+      "en": "Horse riding",
+      "unit": "Stunden",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "ski",
+      "de": "Skifahren",
+      "en": "Skiing",
+      "unit": "Stunden",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "cablecar",
+      "de": "Seilbahn",
+      "en": "Cable car",
+      "unit": "Fahrt",
+      "rate": null,
+      "tier": "insufficient"
+    },
+    {
+      "id": "other",
+      "de": "Andere Aktivität",
+      "en": "Other activity",
+      "unit": "Einheit",
+      "rate": null,
+      "tier": "insufficient"
+    }
+  ],
+  "sources": [
+    {
+      "title": "MiD 2023",
+      "publisher": "BMV / BASt",
+      "year": 2025,
+      "usage": "Exposition nach Verkehrsmittel",
+      "tier": "D",
+      "url": "https://mobilitaet-in-tabellen-2023.bast.de/"
+    },
+    {
+      "title": "Straßenverkehrsunfälle",
+      "publisher": "Destatis",
+      "year": 2026,
+      "usage": "Unfälle und Endpunkte",
+      "tier": "D",
+      "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Verkehrsunfaelle/_inhalt.html"
+    },
+    {
+      "title": "Traffic and Accident Data Germany",
+      "publisher": "BASt",
+      "year": 2026,
+      "usage": "Deutsche Verkehrssicherheit",
+      "tier": "D",
+      "url": "https://www.bast.de/EN/Publications/Media/Traffic-and-Accident-Data.html"
+    },
+    {
+      "title": "CARE und ERSO",
+      "publisher": "Europäische Kommission",
+      "year": 2026,
+      "usage": "Europäische Unfalldaten",
+      "tier": "D",
+      "url": "https://road-safety.transport.ec.europa.eu/european-road-safety-observatory/data-and-analysis_en"
+    },
+    {
+      "title": "Road safety data systems manual",
+      "publisher": "WHO",
+      "year": 2010,
+      "usage": "Definitionen und Datenqualität",
+      "tier": "B",
+      "url": "https://www.who.int/publications/i/item/9789241598965"
+    },
+    {
+      "title": "Highway Safety Manual",
+      "publisher": "FHWA",
+      "year": 2010,
+      "usage": "Prädiktive Methoden",
+      "tier": "C",
+      "url": "https://highways.dot.gov/safety/data-analysis-tools/highway-safety-manual"
+    },
+    {
+      "title": "Seat belts and restraints",
+      "publisher": "NHTSA",
+      "year": 2025,
+      "usage": "Wirkung von Schutzbarrieren",
+      "tier": "C",
+      "url": "https://www.nhtsa.gov/book/countermeasures-that-work/seat-belts-and-child-restraints"
+    },
+    {
+      "title": "Railway Safety and Interoperability",
+      "publisher": "ERA",
+      "year": 2024,
+      "usage": "Bahnrisiken",
+      "tier": "B",
+      "url": "https://www.era.europa.eu/system/files/2024-06/Report%20on%20Railway%20Safety%20and%20Interoperability%20in%20the%20EU%202024.pdf?t=1726720302"
+    },
+    {
+      "title": "Annual Safety Reports",
+      "publisher": "ICAO",
+      "year": 2026,
+      "usage": "Luftfahrt",
+      "tier": "B",
+      "url": "https://www.icao.int/safety-reports"
+    },
+    {
+      "title": "Exposure-adjusted cycling and walking risk",
+      "publisher": "ITF / OECD",
+      "year": 2021,
+      "usage": "Aktive Mobilität",
+      "tier": "C",
+      "url": "https://www.itf-oecd.org/sites/default/files/docs/exposure-adjusted-road-fatality-rates-cycling-walking-europe.pdf"
+    },
+    {
+      "title": "Open Data",
+      "publisher": "KBA",
+      "year": 2026,
+      "usage": "Fahrleistung und Fahrzeuge",
+      "tier": "B",
+      "url": "https://www.kba.de/EN/Service_en/OpenData_en/opendata_node_en.html"
+    },
+    {
+      "title": "Monte Carlo principles",
+      "publisher": "US EPA",
+      "year": 1997,
+      "usage": "Unsicherheitsanalyse",
+      "tier": "B",
+      "url": "https://www.epa.gov/risk/guiding-principles-monte-carlo-analysis"
+    }
+  ],
+  "car": {
+    "road": {
+      "urban": [
+        0.4,
+        5
+      ],
+      "rural": [
+        0.19,
+        23
+      ],
+      "motorway": [
+        0.08,
+        15
+      ]
+    },
+    "belt": {
+      "unknown": 1,
+      "belted": 0.55,
+      "unbelted": 1.25
+    },
+    "seat": {
+      "front": 1,
+      "rear": 0.9
+    },
+    "age": {
+      "new": 0.85,
+      "mid": 1,
+      "old": 1.25
+    },
+    "esc": 0.8,
+    "serious": 0.2,
+    "minor": 0.8,
+    "property": 6
+  }
+}

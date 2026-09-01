@@ -1,1 +1,1 @@
-Research prototype. Numeric mobility parameters are research values, not validated German production rates. Do not use for safety-critical, insurance, medical, legal or employment decisions.
+Research prototype. Do not use for safety-critical, medical, legal, employment or insurance decisions.

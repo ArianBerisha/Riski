@@ -1,1 +1,1 @@
-Complete Impressum placeholders. Upload ALL CONTENTS of this folder to repository root, replace matching files, commit directly to main with: Release RiskAI Full v7.2 Usable Data Engine. Then hard-refresh.
+Complete the Impressum placeholders. Upload ALL contents of this folder to the repository root and replace matching files. Commit directly to main: Release RISK-i Full v7.7 Calibrated Signal. Hard refresh after deployment.
