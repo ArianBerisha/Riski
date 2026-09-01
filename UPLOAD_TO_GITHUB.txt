@@ -1,1 +1,1 @@
-Complete Impressum placeholders. Upload all contents of this folder to repository root and commit directly to main with: Release RiskAI Full v7.1 Data Registry. Then hard-refresh.
+Complete Impressum placeholders. Upload ALL CONTENTS of this folder to repository root, replace matching files, commit directly to main with: Release RiskAI Full v7.2 Usable Data Engine. Then hard-refresh.
