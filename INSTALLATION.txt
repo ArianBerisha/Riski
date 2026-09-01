@@ -1,0 +1,8 @@
+GITHUB INSTALLATION
+1. Extract the ZIP.
+2. Upload ALL contents of RiskAI_Full_GitHub_v3.0 to the ROOT of ArianBerisha/Riski.
+3. Replace existing files when names match.
+4. Keep index.html in the repository root.
+5. Commit to a new branch, test, then merge into main.
+6. GitHub Pages redeploys automatically.
+7. If an old version appears, hard refresh or unregister the old service worker.

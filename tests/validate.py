@@ -1,2 +1,2 @@
-import json, pathlib
-r=pathlib.Path(__file__).parents[1];d=json.load(open(r/'data'/'parameters.json',encoding='utf-8'));assert len(d['modes'])==22;assert sum(m['rate'] is not None for m in d['modes'])==7;assert all((r/x).exists() for x in ['index.html','app.js','styles.css','sw.js','manifest.webmanifest','.nojekyll','.gitignore','README.md']);print('OK: GitHub upload package, bilingual UI, 22 modes, 7 rates')
+import json,pathlib
+r=pathlib.Path(__file__).parents[1];d=json.load(open(r/'data/parameters.json',encoding='utf-8'));assert len(d['modes'])==23;assert sum(m['model'] is not None for m in d['modes'])==7;h=(r/'index.html').read_text();assert all(x in h for x in ['calendar','profiles','history','evidence','method','ai']);assert all((r/x).exists() for x in ['index.html','app.js','styles.css','sw.js','manifest.webmanifest','.nojekyll','.gitignore','README.md']);print('OK full v3.0: 23 modes, 7 models, all feature shells present')
