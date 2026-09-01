@@ -1,5 +1,5 @@
 {
-  "release": "3.0-full-bilingual",
+  "release": "3.6.1-accumulating-pkw-risk",
   "barriers": {
     "seatbelt": {
       "de": "Sicherheitsgurt",
@@ -26,38 +26,117 @@
       "en": "Protective clothing"
     }
   },
-  "sources": [
-    {
-      "id": "destatis-road-2024",
-      "publisher": "Destatis",
-      "title": "Road fatalities by mode, 2024",
-      "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Verkehrsunfaelle/Tabellen/getoetete-fahrzeugart.html"
+  "pkw_model": {
+    "outcomes": {
+      "injury_crash": "Unfall mit Personenschaden",
+      "fatality": "Tod infolge der Fahrt"
     },
-    {
-      "id": "destatis-mileage-2024",
-      "publisher": "Destatis",
-      "title": "Vehicle mileage by vehicle type, 2024",
-      "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Umwelt/UGR/verkehr-tourismus/Tabellen/fahrleistungen-energieverbrauch.html"
+    "road": {
+      "urban": {
+        "injury_crashes_per_million_vkm": 0.4,
+        "fatalities_per_1000_injury_crashes": 5,
+        "quality": "D-proxy",
+        "note_de": "Der deutsche Gesamtwert 2024 wird als konservativer innerörtlicher Proxy verwendet.",
+        "note_en": "The German 2024 total is used as a conservative urban proxy."
+      },
+      "rural": {
+        "injury_crashes_per_million_vkm": 0.19,
+        "fatalities_per_1000_injury_crashes": 23,
+        "quality": "C",
+        "note_de": "Außerörtlicher Straßenindikator; nicht ausschließlich Pkw.",
+        "note_en": "Rural-road indicator; not car-only."
+      },
+      "motorway": {
+        "injury_crashes_per_million_vkm": 0.08,
+        "fatalities_per_1000_injury_crashes": 15,
+        "quality": "C",
+        "note_de": "Autobahnindikator; nicht ausschließlich Pkw.",
+        "note_en": "Motorway indicator; not car-only."
+      }
     },
-    {
-      "id": "kba-mileage-2024",
-      "publisher": "KBA",
-      "title": "Domestic vehicle mileage, 2024",
-      "url": "https://www.kba.de/DE/Statistik/Kraftverkehr/VerkehrKilometer/vk_inlaenderfahrleistung/2024/2024_vk_kurzbericht.html"
+    "belt": {
+      "belted": {
+        "factor": 0.9862817179234286,
+        "quality": "C-transfer"
+      },
+      "unbelted": {
+        "factor": 1.7932394871335064,
+        "quality": "C-transfer"
+      },
+      "unknown": {
+        "factor": 1,
+        "quality": "reference"
+      }
     },
-    {
-      "id": "destatis-local-2024",
-      "publisher": "Destatis",
-      "title": "Local public transport, 2024",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/10/PD25_365_461.html"
+    "vehicle_age": {
+      "0-5": {
+        "factor": 1,
+        "quality": "reference"
+      },
+      "6-15": {
+        "factor": 1.19,
+        "quality": "D-transfer"
+      },
+      "16+": {
+        "factor": 1.31,
+        "quality": "D-transfer"
+      },
+      "unknown": {
+        "factor": 1,
+        "quality": "reference"
+      }
     },
-    {
-      "id": "mid-2023",
-      "publisher": "BMV / MiD",
-      "title": "Mobility in Germany 2023",
-      "url": "https://www.mobilitaet-in-deutschland.de/publikationen2023.html"
+    "esc": {
+      "crash_factor": 0.97,
+      "fatality_severity_factor": 0.85,
+      "quality": "C-transfer"
+    },
+    "duration": {
+      "numeric": false,
+      "reason_de": "Kilometer sind die Exposition. Minuten würden dieselbe Fahrt doppelt zählen und werden beim Pkw daher nicht mehr als Risikoparameter angezeigt.",
+      "reason_en": "Kilometres are the exposure. Minutes would double-count the same trip and are therefore no longer shown as a car risk parameter."
+    },
+    "excluded": {
+      "weather": "Keine kompatible deutsche Pkw-Rate pro Kilometer gefunden.",
+      "time_of_day": "Keine kompatible deutsche Pkw-Rate pro Kilometer gefunden.",
+      "aeb": "Wirksamkeit ist auf Auffahrunfälle begrenzt; ohne belastbaren Unfallartenanteil kein Gesamtfaktor.",
+      "lane_assist": "Wirksamkeit ist auf bestimmte Spurunfälle begrenzt; ohne belastbaren Unfallartenanteil kein Gesamtfaktor.",
+      "blind_spot": "Wirksamkeit ist auf Spurwechselunfälle begrenzt; ohne belastbaren Unfallartenanteil kein Gesamtfaktor.",
+      "airbags": "Wirksamkeit hängt von Aufprallrichtung und Sitzposition ab; kein pauschaler Gesamtfaktor.",
+      "role": "Kein universeller Rollenfaktor; Gurtwirkung nur für Fahrer/Vordersitz."
+    },
+    "micromort": {
+      "definition_de": "1 µMort entspricht einer zusätzlichen Todeswahrscheinlichkeit von 1 zu 1.000.000.",
+      "definition_en": "1 µMort equals an additional one-in-one-million probability of death.",
+      "bands": [
+        {
+          "max": 0.1,
+          "de": "Sehr niedrig",
+          "en": "Very low"
+        },
+        {
+          "max": 1,
+          "de": "Niedrig",
+          "en": "Low"
+        },
+        {
+          "max": 10,
+          "de": "Mittel",
+          "en": "Medium"
+        },
+        {
+          "max": 100,
+          "de": "Hoch",
+          "en": "High"
+        },
+        {
+          "max": null,
+          "de": "Sehr hoch",
+          "en": "Very high"
+        }
+      ]
     }
-  ],
+  },
   "modes": [
     {
       "id": "car",
@@ -73,7 +152,7 @@
         "year": 2024,
         "method": "1165 / 594.1 billion vehicle-km",
         "limitations": [
-          "Person fatalities and vehicle-km are not fully aligned."
+          "Exploratory public-statistics model."
         ]
       },
       "status": "S5",
@@ -166,7 +245,7 @@
         "year": 2024,
         "method": "8 / 40 billion passenger-km",
         "limitations": [
-          "Fatality numerator and local-bus denominator have different segment coverage."
+          "Exploratory public-statistics model."
         ]
       },
       "status": "S5",
@@ -213,7 +292,7 @@
         "year": 2024,
         "method": "402 / 43.8 billion passenger-km",
         "limitations": [
-          "Rounded MiD exposure proxy and non-identical reference periods."
+          "Exploratory public-statistics model."
         ]
       },
       "status": "S5",
@@ -241,7 +320,7 @@
         "year": 2024,
         "method": "250 / 28.713 billion passenger-km",
         "limitations": [
-          "Rounded MiD exposure and approximate bicycle/e-bike split."
+          "Exploratory public-statistics model."
         ]
       },
       "status": "S5",
@@ -271,7 +350,7 @@
         "year": 2024,
         "method": "195 / 14.357 billion passenger-km",
         "limitations": [
-          "Pedelec approximated by the MiD e-bike exposure share."
+          "Exploratory public-statistics model."
         ]
       },
       "status": "S5",
@@ -322,7 +401,7 @@
         "year": 2024,
         "method": "(513 + 41) / 12.278 billion vehicle-km",
         "limitations": [
-          "Aggregate only. Do not combine with separate motorcycle or moped estimates for the same exposure."
+          "Exploratory public-statistics model."
         ]
       },
       "status": "S5",
@@ -418,7 +497,7 @@
         "year": 2024,
         "method": "103 / 101.306 billion vehicle-km",
         "limitations": [
-          "Light commercial and heavy goods vehicle mileage combined."
+          "Exploratory public-statistics model."
         ]
       },
       "status": "S5",
@@ -572,5 +651,69 @@
         "role"
       ]
     }
-  ]
+  ],
+  "probability_model": {
+    "hazard_to_probability": "P = 1 - exp(-H)",
+    "micromort": "M = 1,000,000 * P",
+    "micromort_min": 0,
+    "micromort_max": 1000000,
+    "scale_ticks": [
+      0.01,
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000,
+      100000,
+      1000000
+    ],
+    "scale_mapping": "position_percent = clamp(12.5 * (log10(max(M,0.01)) + 2), 0, 100)",
+    "bands": [
+      {
+        "max_exclusive": 0.1,
+        "de": "Sehr niedrig"
+      },
+      {
+        "max_exclusive": 1,
+        "de": "Niedrig"
+      },
+      {
+        "max_exclusive": 10,
+        "de": "Mittel"
+      },
+      {
+        "max_exclusive": 100,
+        "de": "Hoch"
+      },
+      {
+        "max_exclusive": 1000,
+        "de": "Sehr hoch"
+      },
+      {
+        "max_exclusive": 10000,
+        "de": "Extrem"
+      },
+      {
+        "max_exclusive": 100000,
+        "de": "Sehr extrem"
+      },
+      {
+        "max_inclusive": 1000000,
+        "de": "Nahezu sicher im Modell"
+      }
+    ],
+    "extrapolation_warning_km_per_day": 2000
+  },
+  "display": {
+    "micromort_grouping": "narrow no-break space",
+    "decimal_separator_de": ",",
+    "example": "5 000,0000 µMort = 0,5000 % = about 1:200",
+    "scale_max_micromort": 1000000
+  },
+  "pkw_accumulation": {
+    "previous_plateau": "The old model used P(at least one injury crash) times one-crash fatality severity, causing a plateau at 5,000 µMort for urban severity 5/1000.",
+    "correct_equation": "H_fatal = distance * injury_crash_rate * crash_modifiers * fatality_severity * severity_modifiers; P_fatal = 1 - exp(-H_fatal)",
+    "limit": "As distance tends to infinity, P_fatal tends to 1 and micromorts tend to 1,000,000."
+  }
 }
