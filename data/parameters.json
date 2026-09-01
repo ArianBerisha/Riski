@@ -1,63 +1,66 @@
 {
-  "release": "3.0-full-bilingual",
+  "release": "4.0.0-functional-paper",
   "barriers": {
     "seatbelt": {
       "de": "Sicherheitsgurt",
       "en": "Seat belt"
-    },
-    "seatbelt_optional": {
-      "de": "Sicherheitsgurt, falls vorhanden",
-      "en": "Seat belt, if available"
-    },
-    "bike_helmet": {
-      "de": "Fahrradhelm",
-      "en": "Bicycle helmet"
-    },
-    "helmet": {
-      "de": "Helm",
-      "en": "Helmet"
-    },
-    "moto_helmet": {
-      "de": "Motorradhelm",
-      "en": "Motorcycle helmet"
-    },
-    "protective_clothing": {
-      "de": "Schutzkleidung",
-      "en": "Protective clothing"
     }
   },
-  "sources": [
-    {
-      "id": "destatis-road-2024",
-      "publisher": "Destatis",
-      "title": "Road fatalities by mode, 2024",
-      "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Verkehrsunfaelle/Tabellen/getoetete-fahrzeugart.html"
+  "pkw_model": {
+    "road": {
+      "urban": {
+        "crash": 0.4,
+        "severity": 5
+      },
+      "rural": {
+        "crash": 0.19,
+        "severity": 23
+      },
+      "motorway": {
+        "crash": 0.08,
+        "severity": 15
+      }
     },
-    {
-      "id": "destatis-mileage-2024",
-      "publisher": "Destatis",
-      "title": "Vehicle mileage by vehicle type, 2024",
-      "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Umwelt/UGR/verkehr-tourismus/Tabellen/fahrleistungen-energieverbrauch.html"
+    "belt": {
+      "unknown": 1,
+      "belted": 0.9862817179234286,
+      "unbelted": 1.7932394871335064
     },
-    {
-      "id": "kba-mileage-2024",
-      "publisher": "KBA",
-      "title": "Domestic vehicle mileage, 2024",
-      "url": "https://www.kba.de/DE/Statistik/Kraftverkehr/VerkehrKilometer/vk_inlaenderfahrleistung/2024/2024_vk_kurzbericht.html"
+    "age": {
+      "young": 1,
+      "mid": 1.19,
+      "old": 1.31
     },
-    {
-      "id": "destatis-local-2024",
-      "publisher": "Destatis",
-      "title": "Local public transport, 2024",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/10/PD25_365_461.html"
+    "esc": {
+      "crash": 0.97,
+      "severity": 0.85
     },
-    {
-      "id": "mid-2023",
-      "publisher": "BMV / MiD",
-      "title": "Mobility in Germany 2023",
-      "url": "https://www.mobilitaet-in-deutschland.de/publikationen2023.html"
-    }
-  ],
+    "age_labels": {
+      "unknown": {
+        "de": "Unbekannt",
+        "en": "Unknown"
+      },
+      "young": {
+        "de": "Bis 5 Jahre",
+        "en": "Up to 5 years"
+      },
+      "mid": {
+        "de": "6 bis 15 Jahre",
+        "en": "6 to 15 years"
+      },
+      "old": {
+        "de": "Älter als 15 Jahre",
+        "en": "Older than 15 years"
+      }
+    },
+    "seat": {
+      "driver": 1.0,
+      "front": 1.0,
+      "rear": 0.79,
+      "passenger": 1.0
+    },
+    "seat_note_de": "Rücksitzfaktor 0,79 aus einer Matched-Cohort-Studie; Wirkung variiert nach Alter, Gurt und Airbag."
+  },
   "modes": [
     {
       "id": "car",
@@ -70,10 +73,9 @@
         "rate": 1.9609493351287663e-09,
         "unit": "vehicle_km",
         "tier": "C",
-        "year": 2024,
-        "method": "1165 / 594.1 billion vehicle-km",
+        "method": "public-statistics prototype rate",
         "limitations": [
-          "Person fatalities and vehicle-km are not fully aligned."
+          "Exploratory model"
         ]
       },
       "status": "S5",
@@ -83,7 +85,6 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -104,7 +105,6 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -125,7 +125,6 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -134,8 +133,8 @@
     {
       "id": "taxi",
       "icon": "🚕",
-      "de": "Taxi / Ride-Hailing",
-      "en": "Taxi / ride-hailing",
+      "de": "Taxi",
+      "en": "Taxi",
       "category": "road",
       "fatalities_2024": null,
       "model": null,
@@ -146,7 +145,6 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -155,28 +153,26 @@
     {
       "id": "bus",
       "icon": "🚌",
-      "de": "Bus, Liniennahverkehr",
-      "en": "Local bus",
+      "de": "Bus",
+      "en": "Bus",
       "category": "public",
       "fatalities_2024": 8,
       "model": {
         "rate": 2e-10,
         "unit": "person_km",
         "tier": "C",
-        "year": 2024,
-        "method": "8 / 40 billion passenger-km",
+        "method": "public-statistics prototype rate",
         "limitations": [
-          "Fatality numerator and local-bus denominator have different segment coverage."
+          "Exploratory model"
         ]
       },
       "status": "S5",
-      "barriers": [
-        "seatbelt_optional"
-      ],
+      "barriers": [],
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
+        "road_type",
+        "weather",
         "role"
       ]
     },
@@ -184,18 +180,17 @@
       "id": "coach",
       "icon": "🚍",
       "de": "Fernbus",
-      "en": "Long-distance coach",
-      "category": "long",
+      "en": "Coach",
+      "category": "public",
       "fatalities_2024": null,
       "model": null,
       "status": "S1",
-      "barriers": [
-        "seatbelt"
-      ],
+      "barriers": [],
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
+        "road_type",
+        "weather",
         "role"
       ]
     },
@@ -210,10 +205,9 @@
         "rate": 9.178082191780822e-09,
         "unit": "person_km",
         "tier": "D",
-        "year": 2024,
-        "method": "402 / 43.8 billion passenger-km",
+        "method": "public-statistics prototype rate",
         "limitations": [
-          "Rounded MiD exposure proxy and non-identical reference periods."
+          "Exploratory model"
         ]
       },
       "status": "S5",
@@ -221,7 +215,6 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -238,20 +231,16 @@
         "rate": 8.706614334728032e-09,
         "unit": "person_km",
         "tier": "D",
-        "year": 2024,
-        "method": "250 / 28.713 billion passenger-km",
+        "method": "public-statistics prototype rate",
         "limitations": [
-          "Rounded MiD exposure and approximate bicycle/e-bike split."
+          "Exploratory model"
         ]
       },
       "status": "S5",
-      "barriers": [
-        "bike_helmet"
-      ],
+      "barriers": [],
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -268,20 +257,16 @@
         "rate": 1.3582532488396462e-08,
         "unit": "person_km",
         "tier": "D",
-        "year": 2024,
-        "method": "195 / 14.357 billion passenger-km",
+        "method": "public-statistics prototype rate",
         "limitations": [
-          "Pedelec approximated by the MiD e-bike exposure share."
+          "Exploratory model"
         ]
       },
       "status": "S5",
-      "barriers": [
-        "bike_helmet"
-      ],
+      "barriers": [],
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -296,13 +281,10 @@
       "fatalities_2024": null,
       "model": null,
       "status": "S1",
-      "barriers": [
-        "bike_helmet"
-      ],
+      "barriers": [],
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -311,29 +293,24 @@
     {
       "id": "motorized_two_wheeler",
       "icon": "🏍️",
-      "de": "Motorisiertes Zweirad, aggregiert",
-      "en": "Powered two-wheeler, aggregated",
+      "de": "Motorisiertes Zweirad",
+      "en": "Powered two-wheeler",
       "category": "road",
       "fatalities_2024": 554,
       "model": {
         "rate": 4.512135527e-08,
         "unit": "vehicle_km",
         "tier": "C",
-        "year": 2024,
-        "method": "(513 + 41) / 12.278 billion vehicle-km",
+        "method": "public-statistics prototype rate",
         "limitations": [
-          "Aggregate only. Do not combine with separate motorcycle or moped estimates for the same exposure."
+          "Exploratory model"
         ]
       },
       "status": "S5",
-      "barriers": [
-        "moto_helmet",
-        "protective_clothing"
-      ],
+      "barriers": [],
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -342,20 +319,16 @@
     {
       "id": "motorcycle",
       "icon": "🏍️",
-      "de": "Motorrad separat",
-      "en": "Motorcycle, separate",
+      "de": "Motorrad",
+      "en": "Motorcycle",
       "category": "road",
       "fatalities_2024": 513,
       "model": null,
-      "status": "S2",
-      "barriers": [
-        "moto_helmet",
-        "protective_clothing"
-      ],
+      "status": "S1",
+      "barriers": [],
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -369,15 +342,11 @@
       "category": "road",
       "fatalities_2024": 41,
       "model": null,
-      "status": "S2",
-      "barriers": [
-        "moto_helmet",
-        "protective_clothing"
-      ],
+      "status": "S1",
+      "barriers": [],
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -388,17 +357,14 @@
       "icon": "🛴",
       "de": "E-Scooter",
       "en": "E-scooter",
-      "category": "micro",
+      "category": "road",
       "fatalities_2024": 27,
       "model": null,
-      "status": "S2",
-      "barriers": [
-        "helmet"
-      ],
+      "status": "S1",
+      "barriers": [],
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -407,28 +373,24 @@
     {
       "id": "goods",
       "icon": "🚚",
-      "de": "Lkw / Transporter",
-      "en": "Truck / van",
+      "de": "Lkw",
+      "en": "Truck",
       "category": "road",
       "fatalities_2024": 103,
       "model": {
         "rate": 1.0167216157e-09,
         "unit": "vehicle_km",
         "tier": "C",
-        "year": 2024,
-        "method": "103 / 101.306 billion vehicle-km",
+        "method": "public-statistics prototype rate",
         "limitations": [
-          "Light commercial and heavy goods vehicle mileage combined."
+          "Exploratory model"
         ]
       },
       "status": "S5",
-      "barriers": [
-        "seatbelt"
-      ],
+      "barriers": [],
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
@@ -447,7 +409,8 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
+        "road_type",
+        "weather",
         "role"
       ]
     },
@@ -464,15 +427,16 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
+        "road_type",
+        "weather",
         "role"
       ]
     },
     {
       "id": "regional_rail",
       "icon": "🚈",
-      "de": "Regionalbahn / S-Bahn",
-      "en": "Regional / suburban rail",
+      "de": "Regionalbahn",
+      "en": "Regional rail",
       "category": "public",
       "fatalities_2024": null,
       "model": null,
@@ -481,7 +445,8 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
+        "road_type",
+        "weather",
         "role"
       ]
     },
@@ -498,7 +463,8 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
+        "road_type",
+        "weather",
         "role"
       ]
     },
@@ -507,7 +473,7 @@
       "icon": "🚄",
       "de": "Fernzug",
       "en": "Long-distance rail",
-      "category": "long",
+      "category": "public",
       "fatalities_2024": null,
       "model": null,
       "status": "S1",
@@ -515,16 +481,17 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
+        "road_type",
+        "weather",
         "role"
       ]
     },
     {
       "id": "air",
       "icon": "✈️",
-      "de": "Linienflug",
-      "en": "Scheduled flight",
-      "category": "long",
+      "de": "Flug",
+      "en": "Air",
+      "category": "public",
       "fatalities_2024": null,
       "model": null,
       "status": "S1",
@@ -532,16 +499,17 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
+        "road_type",
+        "weather",
         "role"
       ]
     },
     {
       "id": "ferry",
       "icon": "⛴️",
-      "de": "Fähre / Schiff",
-      "en": "Ferry / ship",
-      "category": "long",
+      "de": "Fähre",
+      "en": "Ferry",
+      "category": "public",
       "fatalities_2024": null,
       "model": null,
       "status": "S1",
@@ -549,15 +517,16 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
+        "road_type",
+        "weather",
         "role"
       ]
     },
     {
       "id": "wheelchair",
       "icon": "♿",
-      "de": "Rollstuhl / Mobilitätshilfe",
-      "en": "Wheelchair / mobility aid",
+      "de": "Rollstuhl",
+      "en": "Wheelchair",
       "category": "active",
       "fatalities_2024": null,
       "model": null,
@@ -566,11 +535,31 @@
       "factors": [
         "distance",
         "duration",
-        "time_of_day",
         "road_type",
         "weather",
         "role"
       ]
     }
-  ]
+  ],
+  "paper_alignment": {
+    "retained": [
+      "additive hazard",
+      "risk-specific barriers",
+      "P=1-exp(-H)",
+      "daily aggregation",
+      "confidence tiers"
+    ],
+    "extended": [
+      "newer public-data car calibration"
+    ],
+    "not_yet_generalized": [
+      "R(t)*a*exp(bt)",
+      "block-diagonal barrier matrix across all risks"
+    ]
+  },
+  "target_model": {
+    "daily_hazard": "lambda_ind_day(t)=R(t)*a*exp(b*t)/365 + sum_i[e_i(t)*r_i*product_j_in_Bi(1-w_ij(t))]",
+    "daily_probability": "P_day(t)=1-exp(-lambda_ind_day(t))",
+    "micromort": "1e6*P_day(t)"
+  }
 }
