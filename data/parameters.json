@@ -1,0 +1,331 @@
+{
+  "release": "2.2-github-bilingual",
+  "bands": [
+    {
+      "max": 0.1,
+      "de": "Sehr niedrig",
+      "en": "Very low",
+      "class": "green"
+    },
+    {
+      "max": 1,
+      "de": "Niedrig",
+      "en": "Low",
+      "class": "blue"
+    },
+    {
+      "max": 10,
+      "de": "Mittel",
+      "en": "Medium",
+      "class": "yellow"
+    },
+    {
+      "max": 100,
+      "de": "Hoch",
+      "en": "High",
+      "class": "orange"
+    },
+    {
+      "max": null,
+      "de": "Sehr hoch",
+      "en": "Very high",
+      "class": "red"
+    }
+  ],
+  "barriers": {
+    "seatbelt": {
+      "de": "Sicherheitsgurt",
+      "en": "Seat belt"
+    },
+    "bike_helmet": {
+      "de": "Fahrradhelm",
+      "en": "Bicycle helmet"
+    },
+    "moto_helmet": {
+      "de": "Motorradhelm",
+      "en": "Motorcycle helmet"
+    },
+    "protective_clothing": {
+      "de": "Schutzkleidung",
+      "en": "Protective clothing"
+    }
+  },
+  "modes": [
+    {
+      "id": "car",
+      "icon": "🚗",
+      "de": "Pkw",
+      "en": "Car",
+      "category": "road",
+      "fatalities": 1165,
+      "rate": 1.9609493351287663e-09,
+      "unit": "vehicle_km",
+      "tier": "C",
+      "barriers": [
+        "seatbelt"
+      ]
+    },
+    {
+      "id": "bus",
+      "icon": "🚌",
+      "de": "Bus",
+      "en": "Bus",
+      "category": "public",
+      "fatalities": 8,
+      "rate": 2e-10,
+      "unit": "person_km",
+      "tier": "C",
+      "barriers": [
+        "seatbelt"
+      ]
+    },
+    {
+      "id": "walking",
+      "icon": "🚶",
+      "de": "Zu Fuß",
+      "en": "Walking",
+      "category": "active",
+      "fatalities": 402,
+      "rate": 9.178082191780822e-09,
+      "unit": "person_km",
+      "tier": "D",
+      "barriers": []
+    },
+    {
+      "id": "bicycle",
+      "icon": "🚲",
+      "de": "Fahrrad",
+      "en": "Bicycle",
+      "category": "active",
+      "fatalities": 250,
+      "rate": 8.706614334728032e-09,
+      "unit": "person_km",
+      "tier": "D",
+      "barriers": [
+        "bike_helmet"
+      ]
+    },
+    {
+      "id": "pedelec",
+      "icon": "⚡",
+      "de": "Pedelec",
+      "en": "Pedelec",
+      "category": "active",
+      "fatalities": 195,
+      "rate": 1.3582532488396462e-08,
+      "unit": "person_km",
+      "tier": "D",
+      "barriers": [
+        "bike_helmet"
+      ]
+    },
+    {
+      "id": "motorized_two_wheeler",
+      "icon": "🏍️",
+      "de": "Motorisiertes Zweirad, aggregiert",
+      "en": "Powered two-wheeler, aggregated",
+      "category": "road",
+      "fatalities": 554,
+      "rate": 4.512135527e-08,
+      "unit": "vehicle_km",
+      "tier": "C",
+      "barriers": [
+        "moto_helmet",
+        "protective_clothing"
+      ]
+    },
+    {
+      "id": "goods",
+      "icon": "🚚",
+      "de": "Lkw / Transporter",
+      "en": "Truck / van",
+      "category": "road",
+      "fatalities": 103,
+      "rate": 1.0167216157e-09,
+      "unit": "vehicle_km",
+      "tier": "C",
+      "barriers": [
+        "seatbelt"
+      ]
+    },
+    {
+      "id": "motorcycle",
+      "icon": "🏍️",
+      "de": "Motorrad separat",
+      "en": "Motorcycle, separate",
+      "category": "road",
+      "fatalities": 513,
+      "rate": null,
+      "tier": null,
+      "barriers": [
+        "moto_helmet",
+        "protective_clothing"
+      ]
+    },
+    {
+      "id": "moped",
+      "icon": "🛵",
+      "de": "Moped",
+      "en": "Moped",
+      "category": "road",
+      "fatalities": 41,
+      "rate": null,
+      "tier": null,
+      "barriers": [
+        "moto_helmet",
+        "protective_clothing"
+      ]
+    },
+    {
+      "id": "escooter",
+      "icon": "🛴",
+      "de": "E-Scooter",
+      "en": "E-scooter",
+      "category": "micro",
+      "fatalities": 27,
+      "rate": null,
+      "tier": null,
+      "barriers": []
+    },
+    {
+      "id": "taxi",
+      "icon": "🚕",
+      "de": "Taxi / Ride-Hailing",
+      "en": "Taxi / ride-hailing",
+      "category": "road",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": [
+        "seatbelt"
+      ]
+    },
+    {
+      "id": "carsharing",
+      "icon": "🚙",
+      "de": "Carsharing",
+      "en": "Car sharing",
+      "category": "road",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": [
+        "seatbelt"
+      ]
+    },
+    {
+      "id": "cargo_bike",
+      "icon": "🚲",
+      "de": "Lastenrad",
+      "en": "Cargo bike",
+      "category": "active",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": [
+        "bike_helmet"
+      ]
+    },
+    {
+      "id": "wheelchair",
+      "icon": "♿",
+      "de": "Rollstuhl / Mobilitätshilfe",
+      "en": "Wheelchair / mobility aid",
+      "category": "active",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": []
+    },
+    {
+      "id": "tram",
+      "icon": "🚋",
+      "de": "Straßenbahn",
+      "en": "Tram",
+      "category": "public",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": []
+    },
+    {
+      "id": "subway",
+      "icon": "🚇",
+      "de": "U-Bahn",
+      "en": "Subway",
+      "category": "public",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": []
+    },
+    {
+      "id": "regional_rail",
+      "icon": "🚈",
+      "de": "Regionalbahn / S-Bahn",
+      "en": "Regional rail / suburban rail",
+      "category": "public",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": []
+    },
+    {
+      "id": "rail",
+      "icon": "🚆",
+      "de": "Eisenbahn",
+      "en": "Rail",
+      "category": "public",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": []
+    },
+    {
+      "id": "high_speed_rail",
+      "icon": "🚄",
+      "de": "Fernzug",
+      "en": "Long-distance rail",
+      "category": "long",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": []
+    },
+    {
+      "id": "coach",
+      "icon": "🚍",
+      "de": "Fernbus",
+      "en": "Long-distance coach",
+      "category": "long",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": [
+        "seatbelt"
+      ]
+    },
+    {
+      "id": "air",
+      "icon": "✈️",
+      "de": "Linienflug",
+      "en": "Scheduled flight",
+      "category": "long",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": []
+    },
+    {
+      "id": "ferry",
+      "icon": "⛴️",
+      "de": "Fähre / Schiff",
+      "en": "Ferry / ship",
+      "category": "long",
+      "fatalities": null,
+      "rate": null,
+      "tier": null,
+      "barriers": []
+    }
+  ]
+}
