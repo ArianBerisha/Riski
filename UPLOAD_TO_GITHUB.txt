@@ -1,1 +1,1 @@
-Complete the Impressum placeholders. Upload ALL contents of this folder to the repository root and replace matching files. Commit directly to main: Release RISK-i Full v7.7 Calibrated Signal. Hard refresh after deployment.
+Complete Impressum placeholders. Upload ALL contents to repository root and replace matching files. Commit directly to main: Release RISK-i Full v7.8 Focused Navigation. Hard refresh after deployment.

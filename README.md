@@ -1,3 +1,3 @@
-# RISKⁱ Full v7.7
+# RISKⁱ Full v7.8
 
-Complete publishable release implementing the calibrated-signal design system. Includes 23 mobility modes, car barriers, four outcomes, profiles, calendar, heatmap history, export, insights, data, evidence, contextual sources, methodology, model limits, legal notice, bilingual UI, responsive navigation, SQLite and the current PDF only.
+Full v7.7 functionality retained. The logarithmic scale now names all five risk stages inside the scale. Top navigation is reduced to four primary destinations; scientific and administrative views are bundled under More. Labels remain on one line.
