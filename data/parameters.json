@@ -1,5 +1,5 @@
 {
-  "release": "4.0.0-functional-paper",
+  "release": "6.2.0-complete-bilingual",
   "barriers": {
     "seatbelt": {
       "de": "Sicherheitsgurt",
@@ -561,5 +561,36 @@
     "daily_hazard": "lambda_ind_day(t)=R(t)*a*exp(b*t)/365 + sum_i[e_i(t)*r_i*product_j_in_Bi(1-w_ij(t))]",
     "daily_probability": "P_day(t)=1-exp(-lambda_ind_day(t))",
     "micromort": "1e6*P_day(t)"
+  },
+  "actuarial_model": {
+    "car": {
+      "road": {
+        "urban": {
+          "injury": 0.4,
+          "fatal": 5
+        },
+        "rural": {
+          "injury": 0.19,
+          "fatal": 23
+        },
+        "motorway": {
+          "injury": 0.08,
+          "fatal": 15
+        }
+      },
+      "minor_share": 0.8,
+      "serious_share": 0.2,
+      "property_multiple": 6,
+      "belt_injury": {
+        "unknown": 1,
+        "belted": 0.5,
+        "unbelted": 1
+      },
+      "seat": {
+        "front": 1,
+        "rear": 0.79
+      }
+    },
+    "status": "research"
   }
 }

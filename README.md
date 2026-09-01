@@ -1,3 +1,3 @@
-# RiskAI Full v4.0
+# RiskAI Full v6.2
 
-Restores numerical seat-belt and seating-position effects. Car options use driver, front seat and rear seat. The Methodology tab embeds the complete Personal QRA paper.
+Complete bilingual version. Language switch is unobtrusively placed in the menu. The start page is reduced to the live micromort scale, three secondary outcome values and activity inputs.

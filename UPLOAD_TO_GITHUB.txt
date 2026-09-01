@@ -1,1 +1,1 @@
-Extract, upload all contents to the repository root, replace matching files, commit directly to main: Release RiskAI Full v4.0, then hard-refresh.
+Complete the Impressum placeholders. Extract ZIP, upload all contents to repository root, replace matching files, commit directly to main: Release RiskAI Full v6.2, then hard-refresh.

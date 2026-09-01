@@ -1,0 +1,44 @@
+[
+  {
+    "publisher": "Destatis",
+    "de": "Verkehrsunfälle 2024",
+    "en": "Road traffic accidents 2024",
+    "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Verkehrsunfaelle/Publikationen/Downloads-Verkehrsunfaelle/statistischer-bericht-verkehrsunfaelle-jahr-2080700247005.html?templateQueryString=1200-440"
+  },
+  {
+    "publisher": "Destatis GENESIS",
+    "de": "Statistik 46241",
+    "en": "Statistics 46241",
+    "url": "https://genesis.destatis.de/datenbank/online/statistic/46241/details"
+  },
+  {
+    "publisher": "BASt",
+    "de": "Unfallgeschehen auf Landstraßen 2024",
+    "en": "Rural-road accidents 2024",
+    "url": "https://www.bast.de/DE/Publikationen/BerichteBASt/Berichte/unterreihe-m/2026-2025/m364.html?nn=473636"
+  },
+  {
+    "publisher": "NHTSA",
+    "de": "Wirksamkeit von Sicherheitsgurten",
+    "en": "Seat-belt effectiveness",
+    "url": "https://www.nhtsa.gov/book/countermeasures-that-work/seat-belts-and-child-restraints"
+  },
+  {
+    "publisher": "JAMA Network Open",
+    "de": "Fahrzeugalter und Assistenzsysteme",
+    "en": "Vehicle age and driver-assistance systems",
+    "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2833617"
+  },
+  {
+    "publisher": "Casualty Actuarial Society",
+    "de": "GLMs für Versicherungstarifierung",
+    "en": "GLMs for insurance rating",
+    "url": "https://www.casact.org/monograph/cas-monograph-no-5"
+  },
+  {
+    "publisher": "GDV",
+    "de": "Typklassen und Schadenbilanzen",
+    "en": "Type classes and claims experience",
+    "url": "https://www.gdv.de/gdv/medien/medieninformationen/typklassen-kfz-versicherung-medieninformation-147618"
+  }
+]

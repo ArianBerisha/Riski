@@ -1,1 +1,1 @@
-Exploratory research prototype. Not an individual prediction or safety clearance.
+Research prototype. Not for insurance pricing, underwriting, eligibility or safety-critical decisions.
