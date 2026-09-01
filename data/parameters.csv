@@ -1,0 +1,24 @@
+﻿parameter_id,mode_id,dataset_id,endpoint,event_definition,numerator,denominator,rate,rate_unit,lower,upper,uncertainty_type,population,period,evidence_status,transferability,notes
+eu2019_car_fatal,car,eu_mode_2019,fatality,passenger fatality,2.52,1000000000.0,2.52e-09,fatalities/passenger-km,,,not reported,EU-27 passengers,2019,research,medium,Secondary compilation; do not release as Germany-specific.
+eu2019_motorcycle_fatal,motorcycle,eu_mode_2019,fatality,powered two-wheeler passenger fatality,36.41,1000000000.0,3.641e-08,fatalities/passenger-km,,,not reported,EU-27 powered two-wheelers,2019,research,medium,Mopeds/motorcycles may be aggregated.
+eu2019_bus_fatal,bus,eu_mode_2019,fatality,bus/coach occupant fatality,0.24,1000000000.0,2.4e-10,fatalities/passenger-km,,,not reported,EU-27 bus/coach occupants,2019,research,medium,Bus and coach combined.
+eu2019_train_fatal,train,eu_mode_2019,fatality,rail passenger fatality,0.09,1000000000.0,9e-11,fatalities/passenger-km,,,not reported,EU-27 rail passengers,2019,research,medium,"Passenger fatalities, excludes other rail casualty classes."
+eu2019_air_fatal,plane,eu_mode_2019,fatality,airline passenger fatality,0.08,1000000000.0,8e-11,fatalities/passenger-km,,,not reported,EU-27 airline passengers,2019,research,low-medium,Cross-mode compilation; aviation operational scope may differ.
+planned_bicycle_fatal,bicycle,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_ebike_fatal,ebike,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_walk_fatal,walk,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_tram_fatal,tram,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_subway_fatal,subway,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_ferry_fatal,ferry,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_boat_fatal,boat,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_taxi_fatal,taxi,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_rideshare_fatal,rideshare,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_truck_fatal,truck,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_van_fatal,van,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_scooter_fatal,scooter,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_moped_fatal,moped,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_skateboard_fatal,skateboard,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_horse_fatal,horse,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_ski_fatal,ski,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_cablecar_fatal,cablecar,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.
+planned_other_fatal,other,,fatality,to be defined,,,,,,,,,,insufficient_evidence,unknown,Source/exposure/endpoint rate not yet harmonised.

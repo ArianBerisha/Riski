@@ -1,1 +1,1 @@
-Complete the Impressum placeholders. Extract ZIP, upload all contents to repository root, replace matching files, commit directly to main: Release RiskAI Full v6.2, then hard-refresh.
+Complete Impressum placeholders. Upload all contents of this folder to repository root and commit directly to main with: Release RiskAI Full v7.1 Data Registry. Then hard-refresh.

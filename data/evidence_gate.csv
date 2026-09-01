@@ -1,0 +1,24 @@
+﻿parameter_id,source_ok,population_ok,exposure_ok,endpoint_ok,rate_ok,transferability_ok,uncertainty_ok,decision,reason
+eu2019_car_fatal,1,1,1,1,1,0,0,research,Transferability to current Germany and uncertainty interval not established.
+eu2019_motorcycle_fatal,1,1,1,1,1,0,0,research,Transferability to current Germany and uncertainty interval not established.
+eu2019_bus_fatal,1,1,1,1,1,0,0,research,Transferability to current Germany and uncertainty interval not established.
+eu2019_train_fatal,1,1,1,1,1,0,0,research,Transferability to current Germany and uncertainty interval not established.
+eu2019_air_fatal,1,1,1,1,1,0,0,research,Transferability to current Germany and uncertainty interval not established.
+planned_bicycle_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_ebike_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_walk_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_tram_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_subway_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_ferry_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_boat_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_taxi_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_rideshare_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_truck_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_van_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_scooter_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_moped_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_skateboard_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_horse_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_ski_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_cablecar_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.
+planned_other_fatal,0,0,0,1,0,0,0,blocked,No compatible numerator-denominator pair loaded.

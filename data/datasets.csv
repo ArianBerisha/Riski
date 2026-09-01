@@ -1,0 +1,10 @@
+﻿dataset_id,source_id,domain,coverage,period,unit_of_analysis,exposure_available,endpoints,license,update_cycle,status,limitations
+mid2023,MID2023,mobility,Germany,2023 survey,persons/trips,1,mobility exposure,report terms,periodic,candidate,Requires extraction and harmonisation with accident years.
+mit2023,MIT2023,mobility,Germany,2023 survey,tables,1,mobility exposure,portal terms,periodic,candidate,User-defined extracts; preserve query metadata.
+destatis_46241,DESTATIS46241,road_mobility,Germany,annual/monthly,accidents/persons,0,"fatal,serious,minor,property",official,annual,candidate,Counts alone are not rates; join compatible exposure.
+care,CARE,road_mobility,EU,annual,crash/person,0,"fatal,serious,minor",EU terms,annual,candidate,Access and harmonisation vary.
+eu_mode_2019,EU_MODE_RISK,mobility,EU-27,2019,passenger-km,1,fatality,web publication,static,research,Not Germany-specific and older period.
+itf_walk_cycle,ITF_WALK_CYCLE,active_mobility,Europe,study period,passenger-km/time,1,fatality,publication terms,static,candidate,Extract Germany values and uncertainty.
+icao_reports,ICAO_SAFETY,aviation,global,annual,departures/passengers,1,"accident,fatal accident,fatality",ICAO terms,annual,candidate,Scheduled commercial scope; passenger allocation required.
+era_2024,ERA_2024,rail,EU/SERA,report to 2022/2023,train-km/passenger-km,1,"accident,serious,fatal",EU reuse,periodic,candidate,Separate passenger risk from trespasser/crossing casualties.
+nhtsa_belt,NHTSA_BELT,road_mobility,United States,synthesis,front-seat occupants,0,"fatal,moderate-critical injury",US government,periodic,candidate,Transferability and competing outcomes must be modelled.

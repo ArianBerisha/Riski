@@ -1,44 +1,200 @@
 [
   {
+    "source_id": "MID2023",
+    "publisher": "BMV / infas / DLR / IVT",
+    "title": "Mobilität in Deutschland 2023 Ergebnisbericht",
+    "year": 2025,
+    "url": "https://www.mobilitaet-in-deutschland.de/pdf/MiD2023_Ergebnisbericht.pdf",
+    "source_type": "official survey",
+    "jurisdiction": "Germany",
+    "access_status": "available",
+    "notes": "Exposure source by mode; use tables or microdata for passenger-km and trips."
+  },
+  {
+    "source_id": "MIT2023",
+    "publisher": "BASt / BMV",
+    "title": "Mobilität in Tabellen 2023",
+    "year": 2025,
+    "url": "https://mobilitaet-in-tabellen-2023.bast.de/",
+    "source_type": "official tabulation",
+    "jurisdiction": "Germany",
+    "access_status": "available",
+    "notes": "Exportable tables for households, persons, trips, journeys and cars."
+  },
+  {
+    "source_id": "DESTATIS46241",
     "publisher": "Destatis",
-    "de": "Verkehrsunfälle 2024",
-    "en": "Road traffic accidents 2024",
-    "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Verkehrsunfaelle/Publikationen/Downloads-Verkehrsunfaelle/statistischer-bericht-verkehrsunfaelle-jahr-2080700247005.html?templateQueryString=1200-440"
+    "title": "Statistik der Straßenverkehrsunfälle 46241",
+    "year": 2026,
+    "url": "https://genesis.destatis.de/datenbank/online/statistic/46241/details",
+    "source_type": "official statistics",
+    "jurisdiction": "Germany",
+    "access_status": "available",
+    "notes": "Counts by road class, location, road-user type and injury severity."
   },
   {
-    "publisher": "Destatis GENESIS",
-    "de": "Statistik 46241",
-    "en": "Statistics 46241",
-    "url": "https://genesis.destatis.de/datenbank/online/statistic/46241/details"
-  },
-  {
+    "source_id": "BAST_SUMMARY",
     "publisher": "BASt",
-    "de": "Unfallgeschehen auf Landstraßen 2024",
-    "en": "Rural-road accidents 2024",
-    "url": "https://www.bast.de/DE/Publikationen/BerichteBASt/Berichte/unterreihe-m/2026-2025/m364.html?nn=473636"
+    "title": "Traffic and Accident Data - Summary Statistics - Germany",
+    "year": 2026,
+    "url": "https://www.bast.de/EN/Publications/Media/Traffic-and-Accident-Data.html",
+    "source_type": "official report",
+    "jurisdiction": "Germany",
+    "access_status": "available",
+    "notes": "German traffic and accident summary."
   },
   {
+    "source_id": "CARE",
+    "publisher": "European Commission",
+    "title": "CARE road accident database and ERSO data",
+    "year": 2026,
+    "url": "https://road-safety.transport.ec.europa.eu/european-road-safety-observatory/data-and-analysis_en",
+    "source_type": "official database",
+    "jurisdiction": "EU",
+    "access_status": "restricted/aggregates",
+    "notes": "Detailed road accident data; serious injuries available for most countries."
+  },
+  {
+    "source_id": "EU_MODE_RISK",
+    "publisher": "European Commission / ERA",
+    "title": "Passenger transport fatality risk by mode, EU-27, 2019",
+    "year": 2019,
+    "url": "https://international-railway-safety-council.com/safety-statistics/",
+    "source_type": "secondary official compilation",
+    "jurisdiction": "EU-27",
+    "access_status": "available",
+    "notes": "Cross-mode rates per billion passenger-km; useful candidate baseline, not Germany-specific."
+  },
+  {
+    "source_id": "ITF_WALK_CYCLE",
+    "publisher": "International Transport Forum OECD",
+    "title": "Exposure-Adjusted Road Fatality Rates for Cycling and Walking in European Countries",
+    "year": 2021,
+    "url": "https://www.itf-oecd.org/sites/default/files/docs/exposure-adjusted-road-fatality-rates-cycling-walking-europe.pdf",
+    "source_type": "international research",
+    "jurisdiction": "Europe",
+    "access_status": "available",
+    "notes": "Candidate exposure-adjusted source for cycling and walking; extract country-level estimates before use."
+  },
+  {
+    "source_id": "ICAO_SAFETY",
+    "publisher": "ICAO",
+    "title": "Annual Safety Reports",
+    "year": 2026,
+    "url": "https://www.icao.int/safety-reports",
+    "source_type": "official report",
+    "jurisdiction": "Global scheduled commercial aviation",
+    "access_status": "available",
+    "notes": "Accidents, departures, fatalities and safety indicators; scope is scheduled commercial operations."
+  },
+  {
+    "source_id": "ERA_2024",
+    "publisher": "European Union Agency for Railways",
+    "title": "Report on Railway Safety and Interoperability in the EU 2024",
+    "year": 2024,
+    "url": "https://www.era.europa.eu/system/files/2024-06/Report%20on%20Railway%20Safety%20and%20Interoperability%20in%20the%20EU%202024.pdf?t=1726720302",
+    "source_type": "official report",
+    "jurisdiction": "EU/SERA",
+    "access_status": "available",
+    "notes": "Common Safety Indicators and exposure definitions."
+  },
+  {
+    "source_id": "EUROSTAT_RAIL",
+    "publisher": "Eurostat",
+    "title": "Railway safety statistics in the EU",
+    "year": 2025,
+    "url": "https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/94376.pdf",
+    "source_type": "official statistics",
+    "jurisdiction": "EU",
+    "access_status": "available",
+    "notes": "Significant accidents, fatalities and serious injuries; distinguish passengers, staff, crossings and trespassers."
+  },
+  {
+    "source_id": "WHO_DATA",
+    "publisher": "WHO / World Bank / FIA / GRSP",
+    "title": "Data systems: a road safety manual",
+    "year": 2010,
+    "url": "https://www.who.int/publications/i/item/9789241598965",
+    "source_type": "methodology",
+    "jurisdiction": "Global",
+    "access_status": "available",
+    "notes": "Definitions, minimum datasets, exposure and data quality."
+  },
+  {
+    "source_id": "HSM",
+    "publisher": "FHWA / AASHTO",
+    "title": "Highway Safety Manual",
+    "year": 2010,
+    "url": "https://highways.dot.gov/safety/data-analysis-tools/highway-safety-manual",
+    "source_type": "methodology",
+    "jurisdiction": "United States",
+    "access_status": "partly paid",
+    "notes": "Safety Performance Functions and crash modification factors; local calibration required."
+  },
+  {
+    "source_id": "NHTSA_BELT",
     "publisher": "NHTSA",
-    "de": "Wirksamkeit von Sicherheitsgurten",
-    "en": "Seat-belt effectiveness",
-    "url": "https://www.nhtsa.gov/book/countermeasures-that-work/seat-belts-and-child-restraints"
+    "title": "Seat Belts and Child Restraints",
+    "year": 2025,
+    "url": "https://www.nhtsa.gov/book/countermeasures-that-work/seat-belts-and-child-restraints",
+    "source_type": "official synthesis",
+    "jurisdiction": "United States",
+    "access_status": "available",
+    "notes": "Candidate barrier effect; endpoint/population transferability required."
   },
   {
-    "publisher": "JAMA Network Open",
-    "de": "Fahrzeugalter und Assistenzsysteme",
-    "en": "Vehicle age and driver-assistance systems",
-    "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2833617"
+    "source_id": "KBA_OPEN",
+    "publisher": "Kraftfahrt-Bundesamt",
+    "title": "KBA Open Data and mileage statistics",
+    "year": 2026,
+    "url": "https://www.kba.de/EN/Service_en/OpenData_en/opendata_node_en.html",
+    "source_type": "official data portal",
+    "jurisdiction": "Germany",
+    "access_status": "available",
+    "notes": "Vehicle stock and mileage sources; machine-readable datasets via Mobilithek."
   },
   {
-    "publisher": "Casualty Actuarial Society",
-    "de": "GLMs für Versicherungstarifierung",
-    "en": "GLMs for insurance rating",
-    "url": "https://www.casact.org/monograph/cas-monograph-no-5"
+    "source_id": "MOBILITHEK",
+    "publisher": "Bundesministerium für Verkehr",
+    "title": "Mobilithek",
+    "year": 2026,
+    "url": "https://mobilithek.info/",
+    "source_type": "official data portal",
+    "jurisdiction": "Germany",
+    "access_status": "available",
+    "notes": "Central portal for mobility, traffic and infrastructure datasets."
   },
   {
-    "publisher": "GDV",
-    "de": "Typklassen und Schadenbilanzen",
-    "en": "Type classes and claims experience",
-    "url": "https://www.gdv.de/gdv/medien/medieninformationen/typklassen-kfz-versicherung-medieninformation-147618"
+    "source_id": "ERSO_CYCLISTS",
+    "publisher": "European Commission",
+    "title": "Facts and Figures - Cyclists",
+    "year": 2023,
+    "url": "https://road-safety.transport.ec.europa.eu/system/files/2023-02/ff_cyclists_20230213.pdf",
+    "source_type": "official report",
+    "jurisdiction": "EU",
+    "access_status": "available",
+    "notes": "Cyclist fatalities, injuries and comparisons; underlying CARE/Eurostat."
+  },
+  {
+    "source_id": "SPORT_DE",
+    "publisher": "German Journal of Sports Medicine",
+    "title": "Sports Injuries in Germany - A Pilot Study",
+    "year": 2024,
+    "url": "https://www.germanjournalsportsmedicine.com/archive/archive-2024/issue-7/sports-injuries-in-germany-a-pilot-study/",
+    "source_type": "peer reviewed",
+    "jurisdiction": "Germany",
+    "access_status": "available",
+    "notes": "Prevalence but detailed exposure times absent; useful only for future sports adapter."
+  },
+  {
+    "source_id": "EPA_MC",
+    "publisher": "US EPA",
+    "title": "Guiding Principles for Monte Carlo Analysis",
+    "year": 1997,
+    "url": "https://www.epa.gov/risk/guiding-principles-monte-carlo-analysis",
+    "source_type": "methodology",
+    "jurisdiction": "General",
+    "access_status": "available",
+    "notes": "Probabilistic uncertainty governance."
   }
 ]

@@ -1,0 +1,2 @@
+import pathlib,json,sqlite3
+r=pathlib.Path(__file__).parents[1];d=json.load(open(r/'data/browser_registry.json'));assert len(d['modes'])==23 and len(d['sources'])>=18 and len(d['parameters'])>=23;h=(r/'index.html').read_text();s=(r/'app.js').read_text();assert all(x in h for x in ['today','database','evidence','sources','method','imprint']);assert 'oninput' in s and 'renderA();update()' in s;print('OK RiskAI Full v7.1')

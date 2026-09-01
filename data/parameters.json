@@ -1,596 +1,439 @@
-{
-  "release": "6.2.0-complete-bilingual",
-  "barriers": {
-    "seatbelt": {
-      "de": "Sicherheitsgurt",
-      "en": "Seat belt"
-    }
+[
+  {
+    "parameter_id": "eu2019_car_fatal",
+    "mode_id": "car",
+    "dataset_id": "eu_mode_2019",
+    "endpoint": "fatality",
+    "event_definition": "passenger fatality",
+    "numerator": 2.52,
+    "denominator": 1000000000.0,
+    "rate": 2.52e-09,
+    "rate_unit": "fatalities/passenger-km",
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": "not reported",
+    "population": "EU-27 passengers",
+    "period": "2019",
+    "evidence_status": "research",
+    "transferability": "medium",
+    "notes": "Secondary compilation; do not release as Germany-specific."
   },
-  "pkw_model": {
-    "road": {
-      "urban": {
-        "crash": 0.4,
-        "severity": 5
-      },
-      "rural": {
-        "crash": 0.19,
-        "severity": 23
-      },
-      "motorway": {
-        "crash": 0.08,
-        "severity": 15
-      }
-    },
-    "belt": {
-      "unknown": 1,
-      "belted": 0.9862817179234286,
-      "unbelted": 1.7932394871335064
-    },
-    "age": {
-      "young": 1,
-      "mid": 1.19,
-      "old": 1.31
-    },
-    "esc": {
-      "crash": 0.97,
-      "severity": 0.85
-    },
-    "age_labels": {
-      "unknown": {
-        "de": "Unbekannt",
-        "en": "Unknown"
-      },
-      "young": {
-        "de": "Bis 5 Jahre",
-        "en": "Up to 5 years"
-      },
-      "mid": {
-        "de": "6 bis 15 Jahre",
-        "en": "6 to 15 years"
-      },
-      "old": {
-        "de": "Älter als 15 Jahre",
-        "en": "Older than 15 years"
-      }
-    },
-    "seat": {
-      "driver": 1.0,
-      "front": 1.0,
-      "rear": 0.79,
-      "passenger": 1.0
-    },
-    "seat_note_de": "Rücksitzfaktor 0,79 aus einer Matched-Cohort-Studie; Wirkung variiert nach Alter, Gurt und Airbag."
+  {
+    "parameter_id": "eu2019_motorcycle_fatal",
+    "mode_id": "motorcycle",
+    "dataset_id": "eu_mode_2019",
+    "endpoint": "fatality",
+    "event_definition": "powered two-wheeler passenger fatality",
+    "numerator": 36.41,
+    "denominator": 1000000000.0,
+    "rate": 3.641e-08,
+    "rate_unit": "fatalities/passenger-km",
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": "not reported",
+    "population": "EU-27 powered two-wheelers",
+    "period": "2019",
+    "evidence_status": "research",
+    "transferability": "medium",
+    "notes": "Mopeds/motorcycles may be aggregated."
   },
-  "modes": [
-    {
-      "id": "car",
-      "icon": "🚗",
-      "de": "Pkw",
-      "en": "Car",
-      "category": "road",
-      "fatalities_2024": 1165,
-      "model": {
-        "rate": 1.9609493351287663e-09,
-        "unit": "vehicle_km",
-        "tier": "C",
-        "method": "public-statistics prototype rate",
-        "limitations": [
-          "Exploratory model"
-        ]
-      },
-      "status": "S5",
-      "barriers": [
-        "seatbelt"
-      ],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "car_passenger",
-      "icon": "🚘",
-      "de": "Pkw als Mitfahrende",
-      "en": "Car passenger",
-      "category": "road",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [
-        "seatbelt"
-      ],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "carsharing",
-      "icon": "🚙",
-      "de": "Carsharing",
-      "en": "Car sharing",
-      "category": "road",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [
-        "seatbelt"
-      ],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "taxi",
-      "icon": "🚕",
-      "de": "Taxi",
-      "en": "Taxi",
-      "category": "road",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [
-        "seatbelt"
-      ],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "bus",
-      "icon": "🚌",
-      "de": "Bus",
-      "en": "Bus",
-      "category": "public",
-      "fatalities_2024": 8,
-      "model": {
-        "rate": 2e-10,
-        "unit": "person_km",
-        "tier": "C",
-        "method": "public-statistics prototype rate",
-        "limitations": [
-          "Exploratory model"
-        ]
-      },
-      "status": "S5",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "coach",
-      "icon": "🚍",
-      "de": "Fernbus",
-      "en": "Coach",
-      "category": "public",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "walking",
-      "icon": "🚶",
-      "de": "Zu Fuß",
-      "en": "Walking",
-      "category": "active",
-      "fatalities_2024": 402,
-      "model": {
-        "rate": 9.178082191780822e-09,
-        "unit": "person_km",
-        "tier": "D",
-        "method": "public-statistics prototype rate",
-        "limitations": [
-          "Exploratory model"
-        ]
-      },
-      "status": "S5",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "bicycle",
-      "icon": "🚲",
-      "de": "Fahrrad",
-      "en": "Bicycle",
-      "category": "active",
-      "fatalities_2024": 250,
-      "model": {
-        "rate": 8.706614334728032e-09,
-        "unit": "person_km",
-        "tier": "D",
-        "method": "public-statistics prototype rate",
-        "limitations": [
-          "Exploratory model"
-        ]
-      },
-      "status": "S5",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "pedelec",
-      "icon": "⚡",
-      "de": "Pedelec",
-      "en": "Pedelec",
-      "category": "active",
-      "fatalities_2024": 195,
-      "model": {
-        "rate": 1.3582532488396462e-08,
-        "unit": "person_km",
-        "tier": "D",
-        "method": "public-statistics prototype rate",
-        "limitations": [
-          "Exploratory model"
-        ]
-      },
-      "status": "S5",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "cargo_bike",
-      "icon": "🚲",
-      "de": "Lastenrad",
-      "en": "Cargo bike",
-      "category": "active",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "motorized_two_wheeler",
-      "icon": "🏍️",
-      "de": "Motorisiertes Zweirad",
-      "en": "Powered two-wheeler",
-      "category": "road",
-      "fatalities_2024": 554,
-      "model": {
-        "rate": 4.512135527e-08,
-        "unit": "vehicle_km",
-        "tier": "C",
-        "method": "public-statistics prototype rate",
-        "limitations": [
-          "Exploratory model"
-        ]
-      },
-      "status": "S5",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "motorcycle",
-      "icon": "🏍️",
-      "de": "Motorrad",
-      "en": "Motorcycle",
-      "category": "road",
-      "fatalities_2024": 513,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "moped",
-      "icon": "🛵",
-      "de": "Moped",
-      "en": "Moped",
-      "category": "road",
-      "fatalities_2024": 41,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "escooter",
-      "icon": "🛴",
-      "de": "E-Scooter",
-      "en": "E-scooter",
-      "category": "road",
-      "fatalities_2024": 27,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "goods",
-      "icon": "🚚",
-      "de": "Lkw",
-      "en": "Truck",
-      "category": "road",
-      "fatalities_2024": 103,
-      "model": {
-        "rate": 1.0167216157e-09,
-        "unit": "vehicle_km",
-        "tier": "C",
-        "method": "public-statistics prototype rate",
-        "limitations": [
-          "Exploratory model"
-        ]
-      },
-      "status": "S5",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "tram",
-      "icon": "🚋",
-      "de": "Straßenbahn",
-      "en": "Tram",
-      "category": "public",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "subway",
-      "icon": "🚇",
-      "de": "U-Bahn",
-      "en": "Subway",
-      "category": "public",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "regional_rail",
-      "icon": "🚈",
-      "de": "Regionalbahn",
-      "en": "Regional rail",
-      "category": "public",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "rail",
-      "icon": "🚆",
-      "de": "Eisenbahn",
-      "en": "Rail",
-      "category": "public",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "high_speed_rail",
-      "icon": "🚄",
-      "de": "Fernzug",
-      "en": "Long-distance rail",
-      "category": "public",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "air",
-      "icon": "✈️",
-      "de": "Flug",
-      "en": "Air",
-      "category": "public",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "ferry",
-      "icon": "⛴️",
-      "de": "Fähre",
-      "en": "Ferry",
-      "category": "public",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    },
-    {
-      "id": "wheelchair",
-      "icon": "♿",
-      "de": "Rollstuhl",
-      "en": "Wheelchair",
-      "category": "active",
-      "fatalities_2024": null,
-      "model": null,
-      "status": "S1",
-      "barriers": [],
-      "factors": [
-        "distance",
-        "duration",
-        "road_type",
-        "weather",
-        "role"
-      ]
-    }
-  ],
-  "paper_alignment": {
-    "retained": [
-      "additive hazard",
-      "risk-specific barriers",
-      "P=1-exp(-H)",
-      "daily aggregation",
-      "confidence tiers"
-    ],
-    "extended": [
-      "newer public-data car calibration"
-    ],
-    "not_yet_generalized": [
-      "R(t)*a*exp(bt)",
-      "block-diagonal barrier matrix across all risks"
-    ]
+  {
+    "parameter_id": "eu2019_bus_fatal",
+    "mode_id": "bus",
+    "dataset_id": "eu_mode_2019",
+    "endpoint": "fatality",
+    "event_definition": "bus/coach occupant fatality",
+    "numerator": 0.24,
+    "denominator": 1000000000.0,
+    "rate": 2.4e-10,
+    "rate_unit": "fatalities/passenger-km",
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": "not reported",
+    "population": "EU-27 bus/coach occupants",
+    "period": "2019",
+    "evidence_status": "research",
+    "transferability": "medium",
+    "notes": "Bus and coach combined."
   },
-  "target_model": {
-    "daily_hazard": "lambda_ind_day(t)=R(t)*a*exp(b*t)/365 + sum_i[e_i(t)*r_i*product_j_in_Bi(1-w_ij(t))]",
-    "daily_probability": "P_day(t)=1-exp(-lambda_ind_day(t))",
-    "micromort": "1e6*P_day(t)"
+  {
+    "parameter_id": "eu2019_train_fatal",
+    "mode_id": "train",
+    "dataset_id": "eu_mode_2019",
+    "endpoint": "fatality",
+    "event_definition": "rail passenger fatality",
+    "numerator": 0.09,
+    "denominator": 1000000000.0,
+    "rate": 9e-11,
+    "rate_unit": "fatalities/passenger-km",
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": "not reported",
+    "population": "EU-27 rail passengers",
+    "period": "2019",
+    "evidence_status": "research",
+    "transferability": "medium",
+    "notes": "Passenger fatalities, excludes other rail casualty classes."
   },
-  "actuarial_model": {
-    "car": {
-      "road": {
-        "urban": {
-          "injury": 0.4,
-          "fatal": 5
-        },
-        "rural": {
-          "injury": 0.19,
-          "fatal": 23
-        },
-        "motorway": {
-          "injury": 0.08,
-          "fatal": 15
-        }
-      },
-      "minor_share": 0.8,
-      "serious_share": 0.2,
-      "property_multiple": 6,
-      "belt_injury": {
-        "unknown": 1,
-        "belted": 0.5,
-        "unbelted": 1
-      },
-      "seat": {
-        "front": 1,
-        "rear": 0.79
-      }
-    },
-    "status": "research"
+  {
+    "parameter_id": "eu2019_air_fatal",
+    "mode_id": "plane",
+    "dataset_id": "eu_mode_2019",
+    "endpoint": "fatality",
+    "event_definition": "airline passenger fatality",
+    "numerator": 0.08,
+    "denominator": 1000000000.0,
+    "rate": 8e-11,
+    "rate_unit": "fatalities/passenger-km",
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": "not reported",
+    "population": "EU-27 airline passengers",
+    "period": "2019",
+    "evidence_status": "research",
+    "transferability": "low-medium",
+    "notes": "Cross-mode compilation; aviation operational scope may differ."
+  },
+  {
+    "parameter_id": "planned_bicycle_fatal",
+    "mode_id": "bicycle",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_ebike_fatal",
+    "mode_id": "ebike",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_walk_fatal",
+    "mode_id": "walk",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_tram_fatal",
+    "mode_id": "tram",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_subway_fatal",
+    "mode_id": "subway",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_ferry_fatal",
+    "mode_id": "ferry",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_boat_fatal",
+    "mode_id": "boat",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_taxi_fatal",
+    "mode_id": "taxi",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_rideshare_fatal",
+    "mode_id": "rideshare",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_truck_fatal",
+    "mode_id": "truck",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_van_fatal",
+    "mode_id": "van",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_scooter_fatal",
+    "mode_id": "scooter",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_moped_fatal",
+    "mode_id": "moped",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_skateboard_fatal",
+    "mode_id": "skateboard",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_horse_fatal",
+    "mode_id": "horse",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_ski_fatal",
+    "mode_id": "ski",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_cablecar_fatal",
+    "mode_id": "cablecar",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
+  },
+  {
+    "parameter_id": "planned_other_fatal",
+    "mode_id": "other",
+    "dataset_id": null,
+    "endpoint": "fatality",
+    "event_definition": "to be defined",
+    "numerator": null,
+    "denominator": null,
+    "rate": null,
+    "rate_unit": null,
+    "lower": null,
+    "upper": null,
+    "uncertainty_type": null,
+    "population": null,
+    "period": null,
+    "evidence_status": "insufficient_evidence",
+    "transferability": "unknown",
+    "notes": "Source/exposure/endpoint rate not yet harmonised."
   }
-}
+]

@@ -1,3 +1,3 @@
-# RiskAI Full v6.2
+# RiskAI Full v7.1
 
-Complete bilingual version. Language switch is unobtrusively placed in the menu. The start page is reduced to the live micromort scale, three secondary outcome values and activity inputs.
+Database-first mobility release with integrated SQLite registry, browser JSON snapshot, 23 modes, evidence decisions, source explorer and research-rate calculation. Research rates are explicitly not validated German production parameters.

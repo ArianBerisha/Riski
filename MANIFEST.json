@@ -1,0 +1,81 @@
+{
+  "release": "7.1.0-data-registry",
+  "created": "2026-09-01",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "67b39c9a31f70e1d661e9c11c1f3dc79c784be0be5e4375c8abebe84eef171c9",
+      "bytes": 344
+    },
+    {
+      "path": "data/datasets.csv",
+      "sha256": "c3e3d563d23a0a8dad902808878f3b586b52abbc6733bb60a18dc271e53f295d",
+      "bytes": 1690
+    },
+    {
+      "path": "data/datasets.json",
+      "sha256": "bf6c944a2bd4c362a62762924c9fc7fb2cd661fd427d8b12fc642ce861fed022",
+      "bytes": 3843
+    },
+    {
+      "path": "data/evidence_gate.csv",
+      "sha256": "15253b4a2aefb014c813f2378925c15722cede7ffafb9513195bfea1891325fb",
+      "bytes": 2387
+    },
+    {
+      "path": "data/evidence_gate.json",
+      "sha256": "e89bb8af44fd9fc0bc2867d2bae1696d785997c77dea564e438069f569655a70",
+      "bytes": 7142
+    },
+    {
+      "path": "data/modes.csv",
+      "sha256": "49d75fb2ae2d192a8aaec5d57914515e1afab9bd44199741849415e0f5b02ec8",
+      "bytes": 1601
+    },
+    {
+      "path": "data/modes.json",
+      "sha256": "623a788c62ab544625e93572dbbf55fd99bca789bf5eb23428d12181c66d4ac4",
+      "bytes": 4636
+    },
+    {
+      "path": "data/parameters.csv",
+      "sha256": "84c66b749732a77f49fc22b11325f138f5427d3e335dd3e137322378dd76f1fc",
+      "bytes": 3896
+    },
+    {
+      "path": "data/parameters.json",
+      "sha256": "c6cd980ff0fff2085557c37cfe96a97910364c9d5be4d65c90eda784a6db6e18",
+      "bytes": 12273
+    },
+    {
+      "path": "data/riskai_registry.sqlite",
+      "sha256": "e43765be62d8fb6b9e2de1be79c4bb21365c7d3101593e75becbf099bbf8fc9d",
+      "bytes": 61440
+    },
+    {
+      "path": "data/sources.csv",
+      "sha256": "446ad3dea900cd66fe5ad28e888c18d74a024b6c403e061abd9955f5196571b6",
+      "bytes": 4861
+    },
+    {
+      "path": "data/sources.json",
+      "sha256": "5a54072f738b1e02f3947fec8a665d4e90771c78dd70cafa91a1ecda1adf8f76",
+      "bytes": 7911
+    },
+    {
+      "path": "docs/DATA_MODEL.md",
+      "sha256": "6a0e4f4ffddfa702035e0c68c2792d05e244d1dfde6babd9f2f4dcd173f875b0",
+      "bytes": 514
+    },
+    {
+      "path": "docs/SOURCE_ROADMAP.md",
+      "sha256": "15b96249958662302190a75967e35a6a03a3b1ba8817162d1ee68e7929c399e7",
+      "bytes": 563
+    },
+    {
+      "path": "tests/validate.py",
+      "sha256": "c685bd0aba80b8d99ffb52d2236882fc59e2dab17a356f4b091d03034a081f66",
+      "bytes": 557
+    }
+  ]
+}

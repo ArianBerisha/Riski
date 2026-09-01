@@ -1,0 +1,186 @@
+[
+  {
+    "mode_id": "car",
+    "label_de": "Auto",
+    "label_en": "Car",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km",
+    "production_status": "research"
+  },
+  {
+    "mode_id": "motorcycle",
+    "label_de": "Motorrad",
+    "label_en": "Motorcycle",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km",
+    "production_status": "research"
+  },
+  {
+    "mode_id": "bicycle",
+    "label_de": "Fahrrad",
+    "label_en": "Bicycle",
+    "domain": "mobility",
+    "natural_exposure": "person-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "ebike",
+    "label_de": "E-Bike",
+    "label_en": "E-bike",
+    "domain": "mobility",
+    "natural_exposure": "person-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "walk",
+    "label_de": "Zu Fuß",
+    "label_en": "Walking",
+    "domain": "mobility",
+    "natural_exposure": "person-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "bus",
+    "label_de": "Bus",
+    "label_en": "Bus",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km",
+    "production_status": "research"
+  },
+  {
+    "mode_id": "tram",
+    "label_de": "Straßenbahn",
+    "label_en": "Tram",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "subway",
+    "label_de": "U-Bahn",
+    "label_en": "Subway",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "train",
+    "label_de": "Zug",
+    "label_en": "Train",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km",
+    "production_status": "research"
+  },
+  {
+    "mode_id": "plane",
+    "label_de": "Flugzeug",
+    "label_en": "Aircraft",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km or departure",
+    "production_status": "research"
+  },
+  {
+    "mode_id": "ferry",
+    "label_de": "Fähre",
+    "label_en": "Ferry",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km or journey",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "boat",
+    "label_de": "Boot",
+    "label_en": "Boat",
+    "domain": "mobility",
+    "natural_exposure": "person-hour",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "taxi",
+    "label_de": "Taxi",
+    "label_en": "Taxi",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "rideshare",
+    "label_de": "Mitfahrdienst",
+    "label_en": "Ride share",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "truck",
+    "label_de": "Lkw",
+    "label_en": "Truck",
+    "domain": "mobility",
+    "natural_exposure": "vehicle-km/person-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "van",
+    "label_de": "Transporter",
+    "label_en": "Van",
+    "domain": "mobility",
+    "natural_exposure": "vehicle-km/person-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "scooter",
+    "label_de": "E-Scooter",
+    "label_en": "E-scooter",
+    "domain": "mobility",
+    "natural_exposure": "person-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "moped",
+    "label_de": "Moped",
+    "label_en": "Moped",
+    "domain": "mobility",
+    "natural_exposure": "passenger-km",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "skateboard",
+    "label_de": "Skateboard",
+    "label_en": "Skateboard",
+    "domain": "mobility",
+    "natural_exposure": "person-hour",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "horse",
+    "label_de": "Reiten",
+    "label_en": "Horse riding",
+    "domain": "mobility",
+    "natural_exposure": "person-hour",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "ski",
+    "label_de": "Skifahren",
+    "label_en": "Skiing",
+    "domain": "mobility",
+    "natural_exposure": "participant-hour/day",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "cablecar",
+    "label_de": "Seilbahn",
+    "label_en": "Cable car",
+    "domain": "mobility",
+    "natural_exposure": "passenger-journey",
+    "production_status": "insufficient_evidence"
+  },
+  {
+    "mode_id": "other",
+    "label_de": "Andere Aktivität",
+    "label_en": "Other activity",
+    "domain": "mobility",
+    "natural_exposure": "domain-specific",
+    "production_status": "insufficient_evidence"
+  }
+]
