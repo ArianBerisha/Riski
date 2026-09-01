@@ -1,0 +1,16 @@
+let pkw39=null;const baseDefault=defaultAct;defaultAct=id=>Object.assign(baseDefault(id),{beltStatus:'unknown',vehicleAgeClass:'unknown',esc:false});
+function pkwAge(a){return pkw39.pkw_model.age[a.vehicleAgeClass||'unknown']||1}
+function pkwBelt(a){return pkw39.pkw_model.belt[a.beltStatus||'unknown']||1}
+function pkwSeat(a){return pkw39.pkw_model.seat[a.role]||1}
+function pkwRoad(a){return pkw39.pkw_model.road[a.road]||pkw39.pkw_model.road.urban}
+function pkwFatalH(a){const r=pkwRoad(a),ec=a.esc?.97:1,es=a.esc?.85:1;return Math.max(0,+a.km||0)*r.crash/1e6*ec*r.severity/1000*pkwBelt(a)*pkwAge(a)*pkwSeat(a)*es}
+function pkwDeath(a){return-Math.expm1(-pkwFatalH(a))}
+function pkwCrash(a){const r=pkwRoad(a),e=a.esc?.97:1;return-Math.expm1(-Math.max(0,+a.km||0)*r.crash/1e6*e)}
+const oldCard=actCard;actCard=(a,i)=>{let h=oldCard(a,i);if(a.mode!=='car')return h;
+ h=h.replace(new RegExp(`<label>${tr('duration')}<input[^<]+</label>`),'').replace(new RegExp(`<label>${tr('weather')}<select[\\s\\S]*?</label>`),'').replace(new RegExp(`<label>${tr('time')}<select[\\s\\S]*?</label>`),'');
+ h=h.replace(/<option value="cycleway"[^>]*>[^<]*<\/option>/,'').replace(/<option value="passenger"[^>]*>[^<]*<\/option>/,'').replace(/<label><input data-bar="[^"]+:seatbelt"[\s\S]*?<\/label>/,'');
+ const fields=`<label>${lang==='de'?'Gurtstatus':'Seat-belt status'}<select data-pkw="${a.id}:beltStatus"><option value="unknown" ${a.beltStatus==='unknown'?'selected':''}>${lang==='de'?'Unbekannt':'Unknown'}</option><option value="belted" ${a.beltStatus==='belted'?'selected':''}>${lang==='de'?'Angelegt':'Fastened'}</option><option value="unbelted" ${a.beltStatus==='unbelted'?'selected':''}>${lang==='de'?'Nicht angelegt':'Not fastened'}</option></select></label><label>${lang==='de'?'Fahrzeugalter':'Vehicle age'}<select data-pkw="${a.id}:vehicleAgeClass"><option value="unknown" ${a.vehicleAgeClass==='unknown'?'selected':''}>${lang==='de'?'Unbekannt':'Unknown'}</option><option value="young" ${a.vehicleAgeClass==='young'?'selected':''}>${lang==='de'?'Bis 5 Jahre':'Up to 5 years'}</option><option value="mid" ${a.vehicleAgeClass==='mid'?'selected':''}>${lang==='de'?'6 bis 15 Jahre':'6 to 15 years'}</option><option value="old" ${a.vehicleAgeClass==='old'?'selected':''}>${lang==='de'?'Älter als 15 Jahre':'Older than 15 years'}</option></select></label><label class="escInline"><span>ESP / ESC</span><input data-esc="${a.id}" type="checkbox" ${a.esc?'checked':''}></label>`;
+ return h.replace('</div><div class="barriers">',fields+'</div><div class="barriers">')}
+const oldBind=bindActivities;bindActivities=()=>{oldBind();$$('[data-pkw]').forEach(e=>e.onchange=()=>{const[id,k]=e.dataset.pkw.split(':'),a=acts.find(x=>x.id===id);a[k]=e.value;calculate()});$$('[data-esc]').forEach(e=>e.onchange=()=>{acts.find(x=>x.id===e.dataset.esc).esc=e.checked;calculate()})}
+const oldResults=results;results=()=>acts.map(a=>{const m=mode(a.mode);if(a.mode==='car'&&m.model&&pkw39){const P=pkwDeath(a);return{a,m,H:-Math.log1p(-P),M:P*1e6}}const H=m.model?a.km*m.model.rate:0;return{a,m,H,M:m.model?-Math.expm1(-H)*1e6:null}})
+fetch('./data/parameters.json',{cache:'no-store'}).then(r=>r.json()).then(x=>{pkw39=x;renderAll()});

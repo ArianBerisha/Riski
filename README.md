@@ -1,3 +1,3 @@
-# RiskAI Full v3.6.1
+# RiskAI Full v4.0
 
-Corrects the artificial 5,000 µMort plateau. Pkw fatal risk now accumulates as a fatal-event hazard and approaches 1,000,000 µMort = 100% for extreme exposure.
+Restores numerical seat-belt and seating-position effects. Car options use driver, front seat and rear seat. The Methodology tab embeds the complete Personal QRA paper.

@@ -1,3 +1,1 @@
-RISKAI FULL v3.6.1
-
-Extract the ZIP, upload all contents to the repository root, replace matching files, and commit directly to main with: Fix accumulating PKW risk v3.6.1. Then hard-refresh the live page.
+Extract, upload all contents to the repository root, replace matching files, commit directly to main: Release RiskAI Full v4.0, then hard-refresh.

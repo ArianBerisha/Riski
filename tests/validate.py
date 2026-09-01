@@ -1,2 +1,2 @@
-import json,pathlib
-r=pathlib.Path(__file__).parents[1];d=json.load(open(r/'data/parameters.json',encoding='utf-8'));assert d['release']=='3.4.0-pkw-focused';assert len(d['modes'])==23;assert sum(x['model'] is not None for x in d['modes'])==7;assert d['pkw_model']['duration']['numeric'] is False;x=(r/'pkw-model-v34.js').read_text();assert all(k in x for k in ['pkwCrashProbability','pkwFatalityProbability','pkwBeltFactor','pkwAgeFactor']);h=(r/'index.html').read_text();assert 'pkw-model-v34.js' in h;print('OK RiskAI Full v3.4 focused PKW model')
+import pathlib,json
+r=pathlib.Path(__file__).parents[1];h=(r/'index.html').read_text();j=(r/'pkw-model-v37.js').read_text();assert 'Evidence-based Risk Twin' not in h;assert 'cycleway' in j and 'seatbelt' in j;assert 'pkwFatalH' in j;assert json.load(open(r/'data/parameters.json'))['release']=='3.7.0-pkw-clean';print('OK v3.7 clean PKW UI')
