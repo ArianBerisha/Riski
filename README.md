@@ -1,26 +1,12 @@
-# RiskAI
+# RiskAI Full v3.0
 
-Bilingual, evidence-based mobility risk twin prototype. Use the **EN/DE** button in the header to switch the complete interface language.
+Full bilingual GitHub Pages edition with daily activities, risk scale, mode-specific barriers, profiles, calendar exceptions, history, evidence catalogue, Risk Copilot Preview, methodology, PWA support and 23 mobility modes.
 
-## GitHub Pages deployment
-
-1. Create a public GitHub repository.
-2. Upload the **contents of this folder** to the repository root. `index.html` must remain in the root.
-3. Open **Settings → Pages**.
-4. Select **Deploy from a branch**, branch **main**, folder **/(root)**.
-
-## Local start
-
-Run `start_windows.bat`.
+## Deploy
+Upload all files to the repository root. GitHub Pages can deploy the static site from `main`.
 
 ## Status
-
-This is a research prototype. Not all modes and contextual factors are quantified. It must not be used for medical, insurance, employment, legal or safety-critical decisions.
-
-## Privacy
-
-Profiles and saved days remain in browser local storage. No server-side user database is included.
+Research prototype. Not for medical, insurance, employment, legal or safety-critical decisions. Missing rates are not estimated.
 
 ## License
-
 No open-source license is granted. All rights reserved.
