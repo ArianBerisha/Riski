@@ -1,287 +1,235 @@
 {
-  "release": "7.8.0",
+  "release": "8.2.0-full-focused-navigation",
   "modes": [
     {
       "id": "car",
       "de": "Auto",
       "en": "Car",
-      "unit": "km",
       "rate": 2.52e-09,
-      "tier": "D"
+      "exposure_unit": "vehicle_km",
+      "evidence_status": "research",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "motorcycle",
       "de": "Motorrad",
       "en": "Motorcycle",
-      "unit": "km",
       "rate": 3.641e-08,
-      "tier": "D"
+      "exposure_unit": "vehicle_km",
+      "evidence_status": "research",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "bicycle",
       "de": "Fahrrad",
       "en": "Bicycle",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "ebike",
       "de": "E-Bike",
       "en": "E-bike",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "walk",
       "de": "Zu Fuß",
       "en": "Walking",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "bus",
       "de": "Bus",
       "en": "Bus",
-      "unit": "km",
       "rate": 2.4e-10,
-      "tier": "D"
+      "exposure_unit": "person_km",
+      "evidence_status": "research",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "tram",
       "de": "Straßenbahn",
       "en": "Tram",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "subway",
       "de": "U-Bahn",
       "en": "Subway",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "train",
       "de": "Zug",
       "en": "Train",
-      "unit": "km",
       "rate": 9e-11,
-      "tier": "D"
+      "exposure_unit": "person_km",
+      "evidence_status": "research",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "plane",
       "de": "Flugzeug",
       "en": "Aircraft",
-      "unit": "km",
       "rate": 8.000000000000001e-11,
-      "tier": "D"
+      "exposure_unit": "person_km",
+      "evidence_status": "research",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "ferry",
       "de": "Fähre",
       "en": "Ferry",
-      "unit": "Fahrt",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "boat",
       "de": "Boot",
       "en": "Boat",
-      "unit": "Stunden",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "taxi",
       "de": "Taxi",
       "en": "Taxi",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "rideshare",
       "de": "Mitfahrdienst",
       "en": "Ride share",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "truck",
       "de": "Lkw",
       "en": "Truck",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "vehicle_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "van",
       "de": "Transporter",
       "en": "Van",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "vehicle_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "scooter",
       "de": "E-Scooter",
       "en": "E-scooter",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "moped",
       "de": "Moped",
       "en": "Moped",
-      "unit": "km",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "skateboard",
       "de": "Skateboard",
       "en": "Skateboard",
-      "unit": "Stunden",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "horse",
       "de": "Reiten",
       "en": "Horse riding",
-      "unit": "Stunden",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "ski",
       "de": "Skifahren",
       "en": "Skiing",
-      "unit": "Stunden",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "cablecar",
       "de": "Seilbahn",
       "en": "Cable car",
-      "unit": "Fahrt",
       "rate": null,
-      "tier": "insufficient"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     },
     {
       "id": "other",
       "de": "Andere Aktivität",
       "en": "Other activity",
-      "unit": "Einheit",
       "rate": null,
-      "tier": "insufficient"
-    }
-  ],
-  "sources": [
-    {
-      "title": "MiD 2023",
-      "publisher": "BMV / BASt",
-      "year": 2025,
-      "usage": "Exposition nach Verkehrsmittel",
-      "tier": "D",
-      "url": "https://mobilitaet-in-tabellen-2023.bast.de/"
-    },
-    {
-      "title": "Straßenverkehrsunfälle",
-      "publisher": "Destatis",
-      "year": 2026,
-      "usage": "Unfälle und Endpunkte",
-      "tier": "D",
-      "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Verkehrsunfaelle/_inhalt.html"
-    },
-    {
-      "title": "Traffic and Accident Data Germany",
-      "publisher": "BASt",
-      "year": 2026,
-      "usage": "Deutsche Verkehrssicherheit",
-      "tier": "D",
-      "url": "https://www.bast.de/EN/Publications/Media/Traffic-and-Accident-Data.html"
-    },
-    {
-      "title": "CARE und ERSO",
-      "publisher": "Europäische Kommission",
-      "year": 2026,
-      "usage": "Europäische Unfalldaten",
-      "tier": "D",
-      "url": "https://road-safety.transport.ec.europa.eu/european-road-safety-observatory/data-and-analysis_en"
-    },
-    {
-      "title": "Road safety data systems manual",
-      "publisher": "WHO",
-      "year": 2010,
-      "usage": "Definitionen und Datenqualität",
-      "tier": "B",
-      "url": "https://www.who.int/publications/i/item/9789241598965"
-    },
-    {
-      "title": "Highway Safety Manual",
-      "publisher": "FHWA",
-      "year": 2010,
-      "usage": "Prädiktive Methoden",
-      "tier": "C",
-      "url": "https://highways.dot.gov/safety/data-analysis-tools/highway-safety-manual"
-    },
-    {
-      "title": "Seat belts and restraints",
-      "publisher": "NHTSA",
-      "year": 2025,
-      "usage": "Wirkung von Schutzbarrieren",
-      "tier": "C",
-      "url": "https://www.nhtsa.gov/book/countermeasures-that-work/seat-belts-and-child-restraints"
-    },
-    {
-      "title": "Railway Safety and Interoperability",
-      "publisher": "ERA",
-      "year": 2024,
-      "usage": "Bahnrisiken",
-      "tier": "B",
-      "url": "https://www.era.europa.eu/system/files/2024-06/Report%20on%20Railway%20Safety%20and%20Interoperability%20in%20the%20EU%202024.pdf?t=1726720302"
-    },
-    {
-      "title": "Annual Safety Reports",
-      "publisher": "ICAO",
-      "year": 2026,
-      "usage": "Luftfahrt",
-      "tier": "B",
-      "url": "https://www.icao.int/safety-reports"
-    },
-    {
-      "title": "Exposure-adjusted cycling and walking risk",
-      "publisher": "ITF / OECD",
-      "year": 2021,
-      "usage": "Aktive Mobilität",
-      "tier": "C",
-      "url": "https://www.itf-oecd.org/sites/default/files/docs/exposure-adjusted-road-fatality-rates-cycling-walking-europe.pdf"
-    },
-    {
-      "title": "Open Data",
-      "publisher": "KBA",
-      "year": 2026,
-      "usage": "Fahrleistung und Fahrzeuge",
-      "tier": "B",
-      "url": "https://www.kba.de/EN/Service_en/OpenData_en/opendata_node_en.html"
-    },
-    {
-      "title": "Monte Carlo principles",
-      "publisher": "US EPA",
-      "year": 1997,
-      "usage": "Unsicherheitsanalyse",
-      "tier": "B",
-      "url": "https://www.epa.gov/risk/guiding-principles-monte-carlo-analysis"
+      "exposure_unit": "person_km",
+      "evidence_status": "insufficient_evidence",
+      "endpoint": "fatality",
+      "uncertainty": null
     }
   ],
   "car": {
@@ -314,8 +262,103 @@
       "old": 1.25
     },
     "esc": 0.8,
-    "serious": 0.2,
     "minor": 0.8,
-    "property": 6
-  }
+    "serious": 0.2
+  },
+  "sources": [
+    {
+      "title": "Mobilität in Deutschland 2023",
+      "publisher": "BMV / BASt",
+      "url": "https://mobilitaet-in-tabellen-2023.bast.de/",
+      "source_id": "src_01",
+      "year": null,
+      "evidence_tier": "B",
+      "model_use": "Mobility exposure or endpoint parameter"
+    },
+    {
+      "title": "Straßenverkehrsunfälle",
+      "publisher": "Destatis",
+      "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Verkehrsunfaelle/_inhalt.html",
+      "source_id": "src_02",
+      "year": null,
+      "evidence_tier": "B",
+      "model_use": "Mobility exposure or endpoint parameter"
+    },
+    {
+      "title": "Traffic and Accident Data Germany",
+      "publisher": "BASt",
+      "url": "https://www.bast.de/EN/Publications/Media/Traffic-and-Accident-Data.html",
+      "source_id": "src_03",
+      "year": null,
+      "evidence_tier": "B",
+      "model_use": "Mobility exposure or endpoint parameter"
+    },
+    {
+      "title": "CARE und ERSO",
+      "publisher": "Europäische Kommission",
+      "url": "https://road-safety.transport.ec.europa.eu/european-road-safety-observatory/data-and-analysis_en",
+      "source_id": "src_04",
+      "year": null,
+      "evidence_tier": "B",
+      "model_use": "Mobility exposure or endpoint parameter"
+    },
+    {
+      "title": "Road safety data systems manual",
+      "publisher": "WHO",
+      "url": "https://www.who.int/publications/i/item/9789241598965",
+      "source_id": "src_05",
+      "year": null,
+      "evidence_tier": "B",
+      "model_use": "Mobility exposure or endpoint parameter"
+    },
+    {
+      "title": "Annual Safety Reports",
+      "publisher": "ICAO",
+      "url": "https://www.icao.int/safety-reports",
+      "source_id": "src_06",
+      "year": null,
+      "evidence_tier": "B",
+      "model_use": "Mobility exposure or endpoint parameter"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "ds_mobility",
+      "de": "Mobilitätsexposition",
+      "en": "Mobility exposure",
+      "source_ids": [
+        "src_01"
+      ],
+      "status": "research"
+    },
+    {
+      "id": "ds_road",
+      "de": "Straßenverkehrsunfälle",
+      "en": "Road traffic crashes",
+      "source_ids": [
+        "src_02",
+        "src_03",
+        "src_04"
+      ],
+      "status": "research"
+    },
+    {
+      "id": "ds_rail",
+      "de": "Bahnrisiken",
+      "en": "Rail risks",
+      "source_ids": [
+        "src_04"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "ds_air",
+      "de": "Luftfahrtrisiken",
+      "en": "Aviation risks",
+      "source_ids": [
+        "src_06"
+      ],
+      "status": "research"
+    }
+  ]
 }

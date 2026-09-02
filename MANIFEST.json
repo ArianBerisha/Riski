@@ -1,80 +1,100 @@
 {
-  "release": "7.8.0",
+  "release": "8.1.0-full",
   "files": [
     {
       "path": "NOTICE.md",
-      "sha256": "d88798f30e333f1bd78c43883e75a2b4ed79ab324b9886f02773cda4c3f1fa46",
-      "bytes": 103
+      "bytes": 55,
+      "sha256": "7a08439c525ca68a2229bae543f30fab0f4706354986d6b56478a6fcc46f95b4"
     },
     {
       "path": "README.md",
-      "sha256": "73169cb36286134a5366e58d02883359407247cbeb40fea4e26543bb711a563a",
-      "bytes": 269
+      "bytes": 246,
+      "sha256": "811f13d76375d8897e36be4b995dd32192f2fa29bca14224dd80777ee368e3d9"
     },
     {
       "path": "UPLOAD_TO_GITHUB.txt",
-      "sha256": "6b3c675157c8aa0443f623681a40b15acc9456da50071b5a421bf890da558fb3",
-      "bytes": 201
+      "bytes": 189,
+      "sha256": "da48b92ef3429eaea0d5cdf1d7868f3aa520b3a13c4ed5072c1123e2e8de9057"
     },
     {
       "path": "app.js",
-      "sha256": "6941643da886f0ccf1d4d8d33285cff28499aa44171e08fb2a047e9eeb752239",
-      "bytes": 14307
+      "bytes": 13997,
+      "sha256": "0ba25371b20d869f33cce4794a38f3b9df5c91844c44774493e472b10af26509"
     },
     {
-      "path": "assets/risk-i-logo-reference.jpeg",
-      "sha256": "5b03c7b00e11295dd1749030c4dd9a447b11b16b43257580fa14dc01fc82f1dd",
-      "bytes": 1783940
+      "path": "data/datasets.csv",
+      "bytes": 234,
+      "sha256": "c49884905cbef92677ee9dd28f9d5d2281dffb1983b4570d5997b73a841aad14"
+    },
+    {
+      "path": "data/datasets.json",
+      "bytes": 671,
+      "sha256": "29e4ed091fbd106e49fca1f18a9f99080847ca81bff38ed13f9b553a59eba21a"
+    },
+    {
+      "path": "data/modes.csv",
+      "bytes": 1585,
+      "sha256": "bbebda9e9710fa16e6fa7af7aabeec383822d26c0f9a5b620d9a8724a19d6226"
+    },
+    {
+      "path": "data/modes.json",
+      "bytes": 5089,
+      "sha256": "17b817fe26acf4bc59dd724492e2ed010b0b64c013bfb778dbebdb30aa621faa"
     },
     {
       "path": "data/registry.json",
-      "sha256": "2bdb3447f6b390c07e46b4dde3114b1098a06f3878c5b89b021c0b740abd3c0c",
-      "bytes": 7088
+      "bytes": 8683,
+      "sha256": "e69ff2a5f519c15df86e68903b2268c9040363e2e5886fedfc601c1aff9f0ebb"
     },
     {
-      "path": "data/riskai.sqlite",
-      "sha256": "8a529fe580ce276cd8eeea2cbadba83c05f7870ca4bbe386550beb426bf52f17",
-      "bytes": 12288
+      "path": "data/riskai_registry.sqlite",
+      "bytes": 20480,
+      "sha256": "a48cefcd4579ecd317024496edee5e1454c4c9c7e4fbf3af4d40ba212dd579a2"
+    },
+    {
+      "path": "data/sources.csv",
+      "bytes": 971,
+      "sha256": "ff92179968ac5117362800b65fb1bbc49fff239a727a50c9c33093c389b960ef"
+    },
+    {
+      "path": "data/sources.json",
+      "bytes": 1741,
+      "sha256": "8ecd8c35e36be13cf2b2d991d26422c29c59cb0de55b80777f362d7454bd2e22"
     },
     {
       "path": "docs/Personal_Quantitative_Risk_Assessment_PQRA.pdf",
-      "sha256": "e192f04ce3a40796f5354e21684d171a6c749c067981ea20e0c7e7d9ad19b4dc",
-      "bytes": 713267
+      "bytes": 713267,
+      "sha256": "e192f04ce3a40796f5354e21684d171a6c749c067981ea20e0c7e7d9ad19b4dc"
     },
     {
       "path": "index.html",
-      "sha256": "2dbacec61a5526fae95ab57f9186f91dfc5778d336e71d7a379708fd93c9e53e",
-      "bytes": 5711
+      "bytes": 5333,
+      "sha256": "6236836c844674f2c24b550289765b9bb2ce1154f82c5d6b416f65b5fc0c7f36"
     },
     {
       "path": "manifest.webmanifest",
-      "sha256": "3b6a1f119033cacf65596d7173e7ecabf5900bcbe01ba8dabe983cb874f99e46",
-      "bytes": 132
-    },
-    {
-      "path": "start_windows.bat",
-      "sha256": "4ab2c1a5261de519b6daa174a91b64c5bfe6716911586b60fda23d85a8bb9fff",
-      "bytes": 196
+      "bytes": 132,
+      "sha256": "3b6a1f119033cacf65596d7173e7ecabf5900bcbe01ba8dabe983cb874f99e46"
     },
     {
       "path": "styles.css",
-      "sha256": "e1f5f839747392b66c37a10221b6c220f587c434837aa11f3f1cdd74a865c7e0",
-      "bytes": 12531
+      "bytes": 6211,
+      "sha256": "16f0186da99403f75ebc5168f3916525519045a5cec03213a45e6f1375c85a77"
     },
     {
       "path": "sw.js",
-      "sha256": "b4b598de0643c07404c396f50608180b8f89256943cad183ca9b4f3987bfe9bd",
-      "bytes": 611
+      "bytes": 508,
+      "sha256": "9bdc64ed45f4858858edb38284e6540f6a1726fbe1f28650db4411ed20fffd83"
     },
     {
       "path": "tests/validate.py",
-      "sha256": "b802809a783dfd5d0b86b2ed79bffd32d55e1d0266ce31a03793589753ca906c",
-      "bytes": 928
+      "bytes": 488,
+      "sha256": "c241abee4987a7acb4296d7d0e80752c85ff4155171b213683a153925a4b7b32"
     },
     {
-      "path": "tests/validate_v78.py",
-      "sha256": "3c94eef916b54ad66b4e776a8d73602a2beb18a826b120893dee1901347a66f5",
-      "bytes": 796
+      "path": "tests/validate_full.py",
+      "bytes": 880,
+      "sha256": "3469552180dfaf669944afff69135051d6c95ed24e7d8fc336e880228afbfa90"
     }
   ]
 }

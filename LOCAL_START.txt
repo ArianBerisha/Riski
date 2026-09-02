@@ -1,0 +1,9 @@
+WINDOWS
+Double-click start_windows.bat.
+The site opens at http://127.0.0.1:8783/
+
+MACOS
+Double-click start_local.command. If macOS blocks it, open Terminal in this folder and run: ./start_local.command
+
+IMPORTANT
+Do not open index.html directly with file:// because registry.json, the PDF, and the service worker require a local HTTP server.

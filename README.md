@@ -1,3 +1,3 @@
-# RISKⁱ Full v7.8
+# RISKⁱ Full v8.2
 
-Full v7.7 functionality retained. The logarithmic scale now names all five risk stages inside the scale. Top navigation is reduced to four primary destinations; scientific and administrative views are bundled under More. Labels remain on one line.
+Complete release with focused navigation. Primary navigation contains Today, Profiles, Calendar and History. All scientific and administrative views remain available under More. The red scale point is larger and remains tied to the logarithmic value. Local start files are included.

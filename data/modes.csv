@@ -1,24 +1,24 @@
-﻿mode_id,label_de,label_en,domain,natural_exposure,production_status
-car,Auto,Car,mobility,passenger-km,research
-motorcycle,Motorrad,Motorcycle,mobility,passenger-km,research
-bicycle,Fahrrad,Bicycle,mobility,person-km,insufficient_evidence
-ebike,E-Bike,E-bike,mobility,person-km,insufficient_evidence
-walk,Zu Fuß,Walking,mobility,person-km,insufficient_evidence
-bus,Bus,Bus,mobility,passenger-km,research
-tram,Straßenbahn,Tram,mobility,passenger-km,insufficient_evidence
-subway,U-Bahn,Subway,mobility,passenger-km,insufficient_evidence
-train,Zug,Train,mobility,passenger-km,research
-plane,Flugzeug,Aircraft,mobility,passenger-km or departure,research
-ferry,Fähre,Ferry,mobility,passenger-km or journey,insufficient_evidence
-boat,Boot,Boat,mobility,person-hour,insufficient_evidence
-taxi,Taxi,Taxi,mobility,passenger-km,insufficient_evidence
-rideshare,Mitfahrdienst,Ride share,mobility,passenger-km,insufficient_evidence
-truck,Lkw,Truck,mobility,vehicle-km/person-km,insufficient_evidence
-van,Transporter,Van,mobility,vehicle-km/person-km,insufficient_evidence
-scooter,E-Scooter,E-scooter,mobility,person-km,insufficient_evidence
-moped,Moped,Moped,mobility,passenger-km,insufficient_evidence
-skateboard,Skateboard,Skateboard,mobility,person-hour,insufficient_evidence
-horse,Reiten,Horse riding,mobility,person-hour,insufficient_evidence
-ski,Skifahren,Skiing,mobility,participant-hour/day,insufficient_evidence
-cablecar,Seilbahn,Cable car,mobility,passenger-journey,insufficient_evidence
-other,Andere Aktivität,Other activity,mobility,domain-specific,insufficient_evidence
+de,en,endpoint,evidence_status,exposure_unit,id,rate,uncertainty
+Auto,Car,fatality,research,vehicle_km,car,2.52e-09,
+Motorrad,Motorcycle,fatality,research,vehicle_km,motorcycle,3.641e-08,
+Fahrrad,Bicycle,fatality,insufficient_evidence,person_km,bicycle,,
+E-Bike,E-bike,fatality,insufficient_evidence,person_km,ebike,,
+Zu Fuß,Walking,fatality,insufficient_evidence,person_km,walk,,
+Bus,Bus,fatality,research,person_km,bus,2.4e-10,
+Straßenbahn,Tram,fatality,insufficient_evidence,person_km,tram,,
+U-Bahn,Subway,fatality,insufficient_evidence,person_km,subway,,
+Zug,Train,fatality,research,person_km,train,9e-11,
+Flugzeug,Aircraft,fatality,research,person_km,plane,8.000000000000001e-11,
+Fähre,Ferry,fatality,insufficient_evidence,person_km,ferry,,
+Boot,Boat,fatality,insufficient_evidence,person_km,boat,,
+Taxi,Taxi,fatality,insufficient_evidence,person_km,taxi,,
+Mitfahrdienst,Ride share,fatality,insufficient_evidence,person_km,rideshare,,
+Lkw,Truck,fatality,insufficient_evidence,vehicle_km,truck,,
+Transporter,Van,fatality,insufficient_evidence,vehicle_km,van,,
+E-Scooter,E-scooter,fatality,insufficient_evidence,person_km,scooter,,
+Moped,Moped,fatality,insufficient_evidence,person_km,moped,,
+Skateboard,Skateboard,fatality,insufficient_evidence,person_km,skateboard,,
+Reiten,Horse riding,fatality,insufficient_evidence,person_km,horse,,
+Skifahren,Skiing,fatality,insufficient_evidence,person_km,ski,,
+Seilbahn,Cable car,fatality,insufficient_evidence,person_km,cablecar,,
+Andere Aktivität,Other activity,fatality,insufficient_evidence,person_km,other,,

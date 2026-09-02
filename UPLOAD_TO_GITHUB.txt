@@ -1,1 +1,1 @@
-Complete Impressum placeholders. Upload ALL contents to repository root and replace matching files. Commit directly to main: Release RISK-i Full v7.8 Focused Navigation. Hard refresh after deployment.
+Upload every file and folder in this directory to the repository root. Replace matching files. Commit directly to main: Release RISK-i Full v8.2 Complete. Clear site data after deployment.
